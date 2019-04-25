@@ -19,40 +19,60 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //( ( ( 3 + 2 + 5 ) × 3 ) × ( 10 × 2 ) )
-    NSString *c0 = @(3).nn_add(@"2").nn_add(@(5)).nn_mul(@(3)).nn_mul(@(10).nn_mul(@(2)));
-    NSLog(@"%@", c0);
-    NSLog(@"%@", c0.nn_formula);
-    //( ( ( 3 × 5 + ( 2 × 2 ) ) ÷ 4 ) × 200 )
-    NSString *c1 = @"3".nn_mul(@"5").nn_add(@"2".nn_mul(@"2")).nn_div(@(4)).nn_mul(@"200");
-    NSLog(@"%@", c1);
-    NSLog(@"%@", c1.nn_formula);
-    //( ( 2 × 5 + ( 2 × 2 ) ) ^ 2 )
-    NSString *c2 = @"2".nn_mul(@"5").nn_add(@"2".nn_mul(@"2")).nn_power(@(2));
-    NSLog(@"%@", c2);
-    NSLog(@"%@", c2.nn_formula);
-    //( ( 2 × 5 + ( 2 × 2 ) ) × 10 ^ 2 )
-    NSString *c3 = @"2".nn_mul(@"5").nn_add(@"2".nn_mul(@"2")).nn_mulPowerOf10(@(2));
-    NSLog(@"%@", c3);
-    NSLog(@"%@", c3.nn_formula);
+    {
+        //( ( ( 3 + 2 + 5 ) × 3 ) × ( 10 × 2 ) )
+        NSString *c = @(3).nn_add(@(2)).nn_add(@(5)).nn_mul(@(3)).nn_mul(@(10).nn_mul(@(2)));
+        NSLog(@"%@", c);
+        NSLog(@"%@", c.nn_formula);
+    }
+    {
+        //( ( ( 3 + 2 + 5 ) × 3 ) × ( 10 × 2 ) )
+        NSString *c = @"3".nn_add(@"2").nn_add(@"5").nn_mul(@"3").nn_mul(@"10".nn_mul(@"2"));
+        NSLog(@"%@", c);
+        NSLog(@"%@", c.nn_formula);
+    }
+    {
+        //( ( ( 3 + 2 + 5 ) × 3 ) × ( 10 × 2 ) )
+        NSString *c = @(3).nn_add(@"2").nn_add(@(5)).nn_mul(@"3").nn_mul(@(10).nn_mul(@"2"));
+        NSLog(@"%@", c);
+        NSLog(@"%@", c.nn_formula);
+    }
+    {
+        //( ( 2 × 5 + ( 2 × 2 ) ) ^ 2 )
+        NSString *c = @"2".nn_mul(@(5)).nn_add(@"2".nn_mul(@"2")).nn_power(@(2));
+        NSLog(@"%@", c);
+        NSLog(@"%@", c.nn_formula);
+    }
+    {
+        //( ( 2 × 5 + ( 2 × 2 ) ) × 10 ^ 2 )
+        NSString *c = @(2).nn_mul(@"5").nn_add(@"2".nn_mul(@(2))).nn_mulPowerOf10(@(2));
+        NSLog(@"%@", c);
+        NSLog(@"%@", c.nn_formula);
+    }
     
-    if ([c0 nn_isEqualTo:c1]) {
-        NSLog(@"c0 == c1");
-    }
-    else if ([c0 nn_isGreaterThan:c1]) {
-        NSLog(@"c0 > c1");
-    }
-    else if ([c0 nn_isGreaterThanOrEqualTo:c1]) {
-        NSLog(@"c0 >= c1");
-    }
-    else if ([c0 nn_isLessThan:c1]) {
-        NSLog(@"c0 < c1");
+    {
+        NSString *c0 = @"100";
+        NSNumber *c1 = @(100.1);
+        if ([c0 nn_isEqualTo:c1]) {
+            NSLog(@"c == c1");
+        }
+        else if ([c0 nn_isGreaterThan:c1]) {
+            NSLog(@"c > c1");
+        }
+        else if ([c0 nn_isGreaterThanOrEqualTo:c1]) {
+            NSLog(@"c >= c1");
+        }
+        else if ([c0 nn_isLessThan:c1]) {
+            NSLog(@"c < c1");
+        }
     }
     
-    //( 2 × [UIView new] )
-    NSString *c4 = @"2".nn_mul([UIView new]);
-    NSLog(@"%@", c4);
-    NSLog(@"%@", c4.nn_formula);
+    {
+        //( 2 × [UIView new] )
+        NSString *c = @"2".nn_mul([UIView new]);
+        NSLog(@"%@", c);
+        NSLog(@"%@", c.nn_formula);
+    }
  }
 
 @end

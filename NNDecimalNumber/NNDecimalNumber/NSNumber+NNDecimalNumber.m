@@ -11,29 +11,33 @@
 
 @implementation NSNumber (NNDecimalNumber)
 
+- (NSString *)__nn_stringValue {
+    return [NSMutableString stringWithString:self.stringValue];
+}
+
 #pragma mark - NNDecimalNumber
 - (NSString *(^)(id))nn_add {
-    return self.stringValue.nn_add;
+    return self.__nn_stringValue.nn_add;
 }
 
 - (NSString *(^)(id))nn_sub {
-    return self.stringValue.nn_sub;
+    return self.__nn_stringValue.nn_sub;
 }
 
 - (NSString *(^)(id))nn_mul {
-    return self.stringValue.nn_mul;
+    return self.__nn_stringValue.nn_mul;
 }
 
 - (NSString *(^)(id))nn_div {
-    return self.stringValue.nn_div;
+    return self.__nn_stringValue.nn_div;
 }
 
 - (NSString *(^)(id))nn_power {
-    return self.stringValue.nn_power;
+    return self.__nn_stringValue.nn_power;
 }
 
 - (NSString *(^)(id))nn_mulPowerOf10 {
-    return self.stringValue.nn_mulPowerOf10;
+    return self.__nn_stringValue.nn_mulPowerOf10;
 }
 
 #pragma mark - NNDecimalNumberCompare

@@ -16,13 +16,17 @@
  @return 字符串
  */
 NS_INLINE NSString *__nn_stringWithValue(id value) {
+    NSString *ret = nil;
     if ([value isKindOfClass:[NSString class]]) {
-        return value;
+        ret = value;
     }
-    if ([value isKindOfClass:[NSNumber class]]) {
-        return [value stringValue];
+    else if ([value isKindOfClass:[NSNumber class]]) {
+        ret = [NSMutableString stringWithString:[value stringValue]];
     }
-    return [value description];
+    else {
+        ret = [NSMutableString stringWithString:[value description]];
+    }
+    return ret;
 }
 
 /**

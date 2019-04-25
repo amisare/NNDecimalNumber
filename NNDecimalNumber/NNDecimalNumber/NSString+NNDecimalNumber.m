@@ -154,7 +154,7 @@ static Class __nn_decimalNumberBehaviors;
             if (lString.nn_formulaStack != nil) {
                 formulaStack = [NSMutableArray arrayWithObject:formulaStack];
             }
-            [formulaStack addObject:@"× 10^"];
+            [formulaStack addObject:@"× 10 ^"];
             retDecimal = [lDecimal decimalNumberByMultiplyingByPowerOf10:[rDecimal shortValue] withBehavior:[[[self class] nn_decimalNumberBehaviors] new]];
             break;
     }

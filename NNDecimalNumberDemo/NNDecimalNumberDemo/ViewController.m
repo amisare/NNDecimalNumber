@@ -48,6 +48,11 @@
     else if ([c0 nn_isLessThan:c1]) {
         NSLog(@"c0 < c1");
     }
+    
+    //( 2 × [UIView new] )
+    NSString *c4 = @"2".nn_mul([UIView new]);
+    NSLog(@"%@", c4);
+    NSLog(@"%@", c4.nn_formula);
  }
 
 @end

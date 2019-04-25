@@ -11,15 +11,10 @@
 #import "NNDecimalNumberHandler.h"
 #import <objc/runtime.h>
 
-@interface NSString (NNDecimalNumberFormulaStack)
-
-@property (nonatomic, copy) NSArray *nn_formulaStack;
-
-@end
+#pragma mark - NNDecimalNumberFormulaStack
 
 @implementation NSString (NNDecimalNumberFormulaStack)
 
-#pragma mark - NNDecimalNumberFormulaStack
 - (NSArray *)nn_formulaStack {
     NSArray *formulaStack = objc_getAssociatedObject(self, _cmd);
     return formulaStack;
@@ -30,6 +25,9 @@
 }
 
 @end
+
+
+#pragma mark - NNDecimalNumber
 
 typedef NS_ENUM(NSUInteger, NNDecimalNumberOperatorType) {
     NNDecimalNumberOperatorTypeAdd,

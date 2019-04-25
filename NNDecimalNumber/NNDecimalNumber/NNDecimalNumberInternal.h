@@ -9,6 +9,18 @@
 #ifndef NNDecimalNumberInternal_h
 #define NNDecimalNumberInternal_h
 
+@interface NSString (NNDecimalNumberFormulaStack)
+
+@property (nonatomic, copy) NSArray *nn_formulaStack;
+
+@end
+
+@interface NSDecimalNumber (NNDecimalNumberStringValue)
+
+@property (nonatomic, copy) NSString *nn_stringValue;
+
+@end
+
 /**
  value 转 字符串
  
@@ -21,7 +33,7 @@ NS_INLINE NSString *__nn_stringWithValue(id value) {
         ret = value;
     }
     else if ([value isKindOfClass:[NSNumber class]]) {
-        ret = [NSMutableString stringWithString:[value stringValue]];
+        ret = [value nn_stringValue];
     }
     else {
         ret = [NSMutableString stringWithString:[value description]];
@@ -71,10 +83,5 @@ NS_INLINE NSString *__nn_formulaFromFormulaStack(NSArray *formulaStack) {
     return formula;
 }
 
-@protocol NNDecimalNumberFormulaStack <NSObject>
-
-@property (nonatomic, copy) NSArray *nn_formulaStack;
-
-@end
 
 #endif /* NNDecimalNumberInternal_h */

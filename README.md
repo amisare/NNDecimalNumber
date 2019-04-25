@@ -1,8 +1,10 @@
 # NNDecimalNumber
 
-Inspiration [RLArithmetic](https://github.com/RylynnLai/RLArithmetic)
+## 介绍
 
 提供 NNString， NSNumber 的 NSDecimalNumber 的计算及比较`分类` ，通过链式调用简化数值计算。
+
+## 使用
 
 - 示例一：全部使用 NSNumber 计算
 
@@ -73,3 +75,39 @@ Inspiration [RLArithmetic](https://github.com/RylynnLai/RLArithmetic)
         NSLog(@"%@", c.nn_formula); //打印值：( ( ( 3 + 2 + 5 ) × 3 ) × ( 10 × 2 ) )
 ```
 
+## 安装
+
+### CocoaPods
+
+安装最新版的 CocoaPods：
+
+```bash
+$ gem install cocoapods
+```
+
+在 `podfile` 中添加：
+
+```ruby
+pod 'NNDecimalNumber', '~> 0.1.0'
+```
+
+然后在终端执行：
+
+```bash
+$ pod install
+```
+
+如安装失败，提示：
+
+```bash
+[!] Unable to find a specification for `NNDecimalNumber`
+```
+
+尝试使用命令：
+
+```bash
+pod install --repo-update
+```
+
+## 其他
+Inspiration [RLArithmetic](https://github.com/RylynnLai/RLArithmetic)

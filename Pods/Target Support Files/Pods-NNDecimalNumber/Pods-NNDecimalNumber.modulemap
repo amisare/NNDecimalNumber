@@ -1,0 +1,6 @@
+framework module Pods_NNDecimalNumber {
+  umbrella header "Pods-NNDecimalNumber-umbrella.h"
+
+  export *
+  module * { export * }
+}

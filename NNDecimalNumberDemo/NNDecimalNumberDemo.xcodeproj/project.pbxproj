@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FE2ECB96C21948C028DC633 /* Pods_NNDecimalNumberDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB976A1BA0E65CBFBF80CE3 /* Pods_NNDecimalNumberDemo.framework */; };
+		674760DD22705FB500222D00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760DC22705FB500222D00 /* AppDelegate.m */; };
+		674760E022705FB500222D00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760DF22705FB500222D00 /* ViewController.m */; };
+		674760E322705FB500222D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674760E122705FB500222D00 /* Main.storyboard */; };
+		674760E522705FB600222D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674760E422705FB600222D00 /* Assets.xcassets */; };
+		674760E822705FB600222D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674760E622705FB600222D00 /* LaunchScreen.storyboard */; };
+		674760EB22705FB600222D00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760EA22705FB600222D00 /* main.m */; };
+		674760F522705FB600222D00 /* NNDecimalNumberDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760F422705FB600222D00 /* NNDecimalNumberDemoTests.m */; };
+		6747610022705FB600222D00 /* NNDecimalNumberDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760FF22705FB600222D00 /* NNDecimalNumberDemoUITests.m */; };
+		6747612C2270705400222D00 /* TESTDecimalNumberBehaviors.m in Sources */ = {isa = PBXBuildFile; fileRef = 6747612B2270705400222D00 /* TESTDecimalNumberBehaviors.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		674760F122705FB600222D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 674760D022705FB500222D00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 674760D722705FB500222D00;
+			remoteInfo = NNDecimalNumberDemo;
+		};
+		674760FC22705FB600222D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 674760D022705FB500222D00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 674760D722705FB500222D00;
+			remoteInfo = NNDecimalNumberDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DB976A1BA0E65CBFBF80CE3 /* Pods_NNDecimalNumberDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNDecimalNumberDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		674760D822705FB500222D00 /* NNDecimalNumberDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNDecimalNumberDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		674760DB22705FB500222D00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		674760DC22705FB500222D00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		674760DE22705FB500222D00 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		674760DF22705FB500222D00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		674760E222705FB500222D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		674760E422705FB600222D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		674760E722705FB600222D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		674760E922705FB600222D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674760EA22705FB600222D00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		674760F022705FB600222D00 /* NNDecimalNumberDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNDecimalNumberDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		674760F422705FB600222D00 /* NNDecimalNumberDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNDecimalNumberDemoTests.m; sourceTree = "<group>"; };
+		674760F622705FB600222D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674760FB22705FB600222D00 /* NNDecimalNumberDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNDecimalNumberDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		674760FF22705FB600222D00 /* NNDecimalNumberDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNDecimalNumberDemoUITests.m; sourceTree = "<group>"; };
+		6747610122705FB600222D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6747612A2270705400222D00 /* TESTDecimalNumberBehaviors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TESTDecimalNumberBehaviors.h; sourceTree = "<group>"; };
+		6747612B2270705400222D00 /* TESTDecimalNumberBehaviors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TESTDecimalNumberBehaviors.m; sourceTree = "<group>"; };
+		B62A7771489A7CF9650E36F6 /* Pods-NNDecimalNumberDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNDecimalNumberDemo.release.xcconfig"; path = "Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D3EFE5306DE3D4009029010D /* Pods-NNDecimalNumberDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNDecimalNumberDemo.debug.xcconfig"; path = "Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		674760D522705FB500222D00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE2ECB96C21948C028DC633 /* Pods_NNDecimalNumberDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674760ED22705FB600222D00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674760F822705FB600222D00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		163EF8C748B41137AB4F3D5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3EFE5306DE3D4009029010D /* Pods-NNDecimalNumberDemo.debug.xcconfig */,
+				B62A7771489A7CF9650E36F6 /* Pods-NNDecimalNumberDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		4920B427C5E440E6F749607B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB976A1BA0E65CBFBF80CE3 /* Pods_NNDecimalNumberDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		674760CF22705FB500222D00 = {
+			isa = PBXGroup;
+			children = (
+				674760DA22705FB500222D00 /* NNDecimalNumberDemo */,
+				674760F322705FB600222D00 /* NNDecimalNumberDemoTests */,
+				674760FE22705FB600222D00 /* NNDecimalNumberDemoUITests */,
+				674760D922705FB500222D00 /* Products */,
+				163EF8C748B41137AB4F3D5C /* Pods */,
+				4920B427C5E440E6F749607B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		674760D922705FB500222D00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				674760D822705FB500222D00 /* NNDecimalNumberDemo.app */,
+				674760F022705FB600222D00 /* NNDecimalNumberDemoTests.xctest */,
+				674760FB22705FB600222D00 /* NNDecimalNumberDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		674760DA22705FB500222D00 /* NNDecimalNumberDemo */ = {
+			isa = PBXGroup;
+			children = (
+				674760DB22705FB500222D00 /* AppDelegate.h */,
+				674760DC22705FB500222D00 /* AppDelegate.m */,
+				674760DE22705FB500222D00 /* ViewController.h */,
+				674760DF22705FB500222D00 /* ViewController.m */,
+				674760E122705FB500222D00 /* Main.storyboard */,
+				674760E422705FB600222D00 /* Assets.xcassets */,
+				674760E622705FB600222D00 /* LaunchScreen.storyboard */,
+				674760E922705FB600222D00 /* Info.plist */,
+				674760EA22705FB600222D00 /* main.m */,
+				6747612A2270705400222D00 /* TESTDecimalNumberBehaviors.h */,
+				6747612B2270705400222D00 /* TESTDecimalNumberBehaviors.m */,
+			);
+			path = NNDecimalNumberDemo;
+			sourceTree = "<group>";
+		};
+		674760F322705FB600222D00 /* NNDecimalNumberDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				674760F422705FB600222D00 /* NNDecimalNumberDemoTests.m */,
+				674760F622705FB600222D00 /* Info.plist */,
+			);
+			path = NNDecimalNumberDemoTests;
+			sourceTree = "<group>";
+		};
+		674760FE22705FB600222D00 /* NNDecimalNumberDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				674760FF22705FB600222D00 /* NNDecimalNumberDemoUITests.m */,
+				6747610122705FB600222D00 /* Info.plist */,
+			);
+			path = NNDecimalNumberDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		674760D722705FB500222D00 /* NNDecimalNumberDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6747610422705FB600222D00 /* Build configuration list for PBXNativeTarget "NNDecimalNumberDemo" */;
+			buildPhases = (
+				840705ED560500A9CA1A2D2B /* [CP] Check Pods Manifest.lock */,
+				674760D422705FB500222D00 /* Sources */,
+				674760D522705FB500222D00 /* Frameworks */,
+				674760D622705FB500222D00 /* Resources */,
+				45B299A2012F4E2EF6F3856B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NNDecimalNumberDemo;
+			productName = NNDecimalNumberDemo;
+			productReference = 674760D822705FB500222D00 /* NNDecimalNumberDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		674760EF22705FB600222D00 /* NNDecimalNumberDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6747610722705FB600222D00 /* Build configuration list for PBXNativeTarget "NNDecimalNumberDemoTests" */;
+			buildPhases = (
+				674760EC22705FB600222D00 /* Sources */,
+				674760ED22705FB600222D00 /* Frameworks */,
+				674760EE22705FB600222D00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				674760F222705FB600222D00 /* PBXTargetDependency */,
+			);
+			name = NNDecimalNumberDemoTests;
+			productName = NNDecimalNumberDemoTests;
+			productReference = 674760F022705FB600222D00 /* NNDecimalNumberDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		674760FA22705FB600222D00 /* NNDecimalNumberDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6747610A22705FB600222D00 /* Build configuration list for PBXNativeTarget "NNDecimalNumberDemoUITests" */;
+			buildPhases = (
+				674760F722705FB600222D00 /* Sources */,
+				674760F822705FB600222D00 /* Frameworks */,
+				674760F922705FB600222D00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				674760FD22705FB600222D00 /* PBXTargetDependency */,
+			);
+			name = NNDecimalNumberDemoUITests;
+			productName = NNDecimalNumberDemoUITests;
+			productReference = 674760FB22705FB600222D00 /* NNDecimalNumberDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		674760D022705FB500222D00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "HaiJun Gu";
+				TargetAttributes = {
+					674760D722705FB500222D00 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					674760EF22705FB600222D00 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 674760D722705FB500222D00;
+					};
+					674760FA22705FB600222D00 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 674760D722705FB500222D00;
+					};
+				};
+			};
+			buildConfigurationList = 674760D322705FB500222D00 /* Build configuration list for PBXProject "NNDecimalNumberDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 674760CF22705FB500222D00;
+			productRefGroup = 674760D922705FB500222D00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				674760D722705FB500222D00 /* NNDecimalNumberDemo */,
+				674760EF22705FB600222D00 /* NNDecimalNumberDemoTests */,
+				674760FA22705FB600222D00 /* NNDecimalNumberDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		674760D622705FB500222D00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674760E822705FB600222D00 /* LaunchScreen.storyboard in Resources */,
+				674760E522705FB600222D00 /* Assets.xcassets in Resources */,
+				674760E322705FB500222D00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674760EE22705FB600222D00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674760F922705FB600222D00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45B299A2012F4E2EF6F3856B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NNDecimalNumber/NNDecimalNumber.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NNDecimalNumber.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		840705ED560500A9CA1A2D2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NNDecimalNumberDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		674760D422705FB500222D00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674760E022705FB500222D00 /* ViewController.m in Sources */,
+				674760EB22705FB600222D00 /* main.m in Sources */,
+				6747612C2270705400222D00 /* TESTDecimalNumberBehaviors.m in Sources */,
+				674760DD22705FB500222D00 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674760EC22705FB600222D00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674760F522705FB600222D00 /* NNDecimalNumberDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674760F722705FB600222D00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6747610022705FB600222D00 /* NNDecimalNumberDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		674760F222705FB600222D00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 674760D722705FB500222D00 /* NNDecimalNumberDemo */;
+			targetProxy = 674760F122705FB600222D00 /* PBXContainerItemProxy */;
+		};
+		674760FD22705FB600222D00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 674760D722705FB500222D00 /* NNDecimalNumberDemo */;
+			targetProxy = 674760FC22705FB600222D00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		674760E122705FB500222D00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				674760E222705FB500222D00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		674760E622705FB600222D00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				674760E722705FB600222D00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6747610222705FB600222D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6747610322705FB600222D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6747610522705FB600222D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3EFE5306DE3D4009029010D /* Pods-NNDecimalNumberDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NNDecimalNumberDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nn.NNDecimalNumberDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6747610622705FB600222D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B62A7771489A7CF9650E36F6 /* Pods-NNDecimalNumberDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NNDecimalNumberDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nn.NNDecimalNumberDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6747610822705FB600222D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NNDecimalNumberDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nn.NNDecimalNumberDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NNDecimalNumberDemo.app/NNDecimalNumberDemo";
+			};
+			name = Debug;
+		};
+		6747610922705FB600222D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NNDecimalNumberDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nn.NNDecimalNumberDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NNDecimalNumberDemo.app/NNDecimalNumberDemo";
+			};
+			name = Release;
+		};
+		6747610B22705FB600222D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NNDecimalNumberDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nn.NNDecimalNumberDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NNDecimalNumberDemo;
+			};
+			name = Debug;
+		};
+		6747610C22705FB600222D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NNDecimalNumberDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nn.NNDecimalNumberDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NNDecimalNumberDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		674760D322705FB500222D00 /* Build configuration list for PBXProject "NNDecimalNumberDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6747610222705FB600222D00 /* Debug */,
+				6747610322705FB600222D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6747610422705FB600222D00 /* Build configuration list for PBXNativeTarget "NNDecimalNumberDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6747610522705FB600222D00 /* Debug */,
+				6747610622705FB600222D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6747610722705FB600222D00 /* Build configuration list for PBXNativeTarget "NNDecimalNumberDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6747610822705FB600222D00 /* Debug */,
+				6747610922705FB600222D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6747610A22705FB600222D00 /* Build configuration list for PBXNativeTarget "NNDecimalNumberDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6747610B22705FB600222D00 /* Debug */,
+				6747610C22705FB600222D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 674760D022705FB500222D00 /* Project object */;
+}

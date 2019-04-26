@@ -18,7 +18,19 @@ FOUNDATION_EXPORT const unsigned char NNDecimalNumberVersionString[];
 
 @protocol NNDecimalNumberBehaviors <NSObject>
 
+/**
+ 设置 DecimalNumber 计算中 Rounding 和 Exception 的处理类
+ 
+ @discussion 不设置，默认使用 NNDecimalNumberHandler 类
+ @param decimalNumberBehaviors 参数类必须遵守 NSDecimalNumberBehaviors 协议
+ */
 + (void)nn_setDecimalNumberBehaviors:(Class)decimalNumberBehaviors;
+
+/**
+ 获取 DecimalNumber 计算中 Rounding 和 Exception 的处理类
+
+ @return decimalNumberBehaviors 类
+ */
 + (Class)nn_decimalNumberBehaviors;
 
 @end

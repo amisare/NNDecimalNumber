@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "NNDecimalNumber"
-  s.version       = "1.0.0"
+  s.version       = "0.1.0"
   s.summary       = "Implement NSDecimalNumber calculations on NSString, NSNumber Category, simplifying NSDecimalNumber calculations."
 
   s.description   = <<-DESC

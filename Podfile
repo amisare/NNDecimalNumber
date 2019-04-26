@@ -13,7 +13,3 @@ target :NNDecimalNumberDemo do
     project './NNDecimalNumberDemo/NNDecimalNumberDemo'
     all_pods
 end
-
-target :NNDecimalNumber do
-  project './NNDecimalNumber/NNDecimalNumber'
-end

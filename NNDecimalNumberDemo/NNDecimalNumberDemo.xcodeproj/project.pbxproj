@@ -16,7 +16,6 @@
 		674760EB22705FB600222D00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760EA22705FB600222D00 /* main.m */; };
 		674760F522705FB600222D00 /* NNDecimalNumberDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760F422705FB600222D00 /* NNDecimalNumberDemoTests.m */; };
 		6747610022705FB600222D00 /* NNDecimalNumberDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760FF22705FB600222D00 /* NNDecimalNumberDemoUITests.m */; };
-		6747612C2270705400222D00 /* TESTDecimalNumberBehaviors.m in Sources */ = {isa = PBXBuildFile; fileRef = 6747612B2270705400222D00 /* TESTDecimalNumberBehaviors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +53,6 @@
 		674760FB22705FB600222D00 /* NNDecimalNumberDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNDecimalNumberDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		674760FF22705FB600222D00 /* NNDecimalNumberDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNDecimalNumberDemoUITests.m; sourceTree = "<group>"; };
 		6747610122705FB600222D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6747612A2270705400222D00 /* TESTDecimalNumberBehaviors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TESTDecimalNumberBehaviors.h; sourceTree = "<group>"; };
-		6747612B2270705400222D00 /* TESTDecimalNumberBehaviors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TESTDecimalNumberBehaviors.m; sourceTree = "<group>"; };
 		B62A7771489A7CF9650E36F6 /* Pods-NNDecimalNumberDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNDecimalNumberDemo.release.xcconfig"; path = "Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D3EFE5306DE3D4009029010D /* Pods-NNDecimalNumberDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNDecimalNumberDemo.debug.xcconfig"; path = "Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,8 +135,6 @@
 				674760E622705FB600222D00 /* LaunchScreen.storyboard */,
 				674760E922705FB600222D00 /* Info.plist */,
 				674760EA22705FB600222D00 /* main.m */,
-				6747612A2270705400222D00 /* TESTDecimalNumberBehaviors.h */,
-				6747612B2270705400222D00 /* TESTDecimalNumberBehaviors.m */,
 			);
 			path = NNDecimalNumberDemo;
 			sourceTree = "<group>";
@@ -343,7 +338,6 @@
 			files = (
 				674760E022705FB500222D00 /* ViewController.m in Sources */,
 				674760EB22705FB600222D00 /* main.m in Sources */,
-				6747612C2270705400222D00 /* TESTDecimalNumberBehaviors.m in Sources */,
 				674760DD22705FB500222D00 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

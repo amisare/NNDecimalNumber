@@ -1,4 +1,9 @@
-# NNDecimalNumber
+<h1 align = "center">NNDecimalNumber</h1>
+
+[![GitHub release](https://img.shields.io/github/release/amisare/NNDecimalNumber.svg)](https://github.com/amisare/NNDecimalNumber/releases)
+[![CocoaPods](https://img.shields.io/cocoapods/v/NNDecimalNumber.svg)](https://cocoapods.org/pods/NNDecimalNumber)
+[![CocoaPods](https://img.shields.io/cocoapods/p/NNDecimalNumber.svg)](https://cocoapods.org/pods/NNDecimalNumber)
+[![GitHub license](https://img.shields.io/github/license/amisare/NNDecimalNumber.svg)](https://github.com/amisare/NNDecimalNumber/blob/master/LICENSE)
 
 ## 介绍
 

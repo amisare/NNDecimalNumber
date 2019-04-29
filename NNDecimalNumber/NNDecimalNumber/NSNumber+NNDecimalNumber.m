@@ -46,34 +46,34 @@
 }
 
 #pragma mark - NNDecimalNumberCompare
-- (NSComparisonResult)nn_compare:(id)value {
+- (NSComparisonResult)nn_decimalCompare:(id)value {
     NSDecimalNumber *l = __nn_decimalNumberWithValue(self);
-    return [l nn_compare:value];
+    return [l nn_decimalCompare:value];
 }
 
-- (BOOL)nn_isEqualTo:(id)value {
+- (BOOL)nn_decimalIsEqualTo:(id)value {
     NSDecimalNumber *l = __nn_decimalNumberWithValue(self);
-    return [l nn_isEqualTo:value];
+    return [l nn_decimalIsEqualTo:value];
 }
 
-- (BOOL)nn_isGreaterThan:(id)value {
+- (BOOL)nn_decimalIsGreaterThan:(id)value {
     NSDecimalNumber *l = __nn_decimalNumberWithValue(self);
-    return [l nn_isGreaterThan:value];
+    return [l nn_decimalIsGreaterThan:value];
 }
 
-- (BOOL)nn_isGreaterThanOrEqualTo:(id)value {
+- (BOOL)nn_decimalIsGreaterThanOrEqualTo:(id)value {
     NSDecimalNumber *l = __nn_decimalNumberWithValue(self);
-    return [l nn_isGreaterThanOrEqualTo:value];
+    return [l nn_decimalIsGreaterThanOrEqualTo:value];
 }
 
-- (BOOL)nn_isLessThan:(id)value {
+- (BOOL)nn_decimalIsLessThan:(id)value {
     NSDecimalNumber *l = __nn_decimalNumberWithValue(self);
-    return [l nn_isLessThan:value];
+    return [l nn_decimalIsLessThan:value];
 }
 
-- (BOOL)nn_isLessThanOrEqualTo:(id)value {
+- (BOOL)nn_decimalIsLessThanOrEqualTo:(id)value {
     NSDecimalNumber *l = __nn_decimalNumberWithValue(self);
-    return [l nn_isLessThanOrEqualTo:value];
+    return [l nn_decimalIsLessThanOrEqualTo:value];
 }
 
 @end

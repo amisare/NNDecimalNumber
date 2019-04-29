@@ -50,16 +50,16 @@
 ```
     NSString *c0 = @"100";
     NSNumber *c1 = @(100.1);
-    if ([c0 nn_isEqualTo:c1]) {
+    if ([c0 nn_decimalIsEqualTo:c1]) {
         NSLog(@"c == c1");
     }
-    else if ([c0 nn_isGreaterThan:c1]) {
+    else if ([c0 nn_decimalIsGreaterThan:c1]) {
         NSLog(@"c > c1");
     }
-    else if ([c0 nn_isGreaterThanOrEqualTo:c1]) {
+    else if ([c0 nn_decimalIsGreaterThanOrEqualTo:c1]) {
         NSLog(@"c >= c1");
     }
-    else if ([c0 nn_isLessThan:c1]) {
+    else if ([c0 nn_decimalIsLessThan:c1]) {
         NSLog(@"c < c1");
     }
 ```

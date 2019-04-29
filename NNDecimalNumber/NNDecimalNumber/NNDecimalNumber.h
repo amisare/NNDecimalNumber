@@ -54,12 +54,12 @@ FOUNDATION_EXPORT const unsigned char NNDecimalNumberVersionString[];
 
 @protocol NNDecimalNumberCompare <NSObject>
 
-- (BOOL)nn_isEqualTo:(id)value;
-- (BOOL)nn_isGreaterThan:(id)value;
-- (BOOL)nn_isLessThan:(id)value;
-- (BOOL)nn_isGreaterThanOrEqualTo:(id)value;
-- (BOOL)nn_isLessThanOrEqualTo:(id)value;
-- (NSComparisonResult)nn_compare:(id)value;
+- (NSComparisonResult)nn_decimalCompare:(id)value;
+- (BOOL)nn_decimalIsEqualTo:(id)value;
+- (BOOL)nn_decimalIsGreaterThan:(id)value;
+- (BOOL)nn_decimalIsLessThan:(id)value;
+- (BOOL)nn_decimalIsGreaterThanOrEqualTo:(id)value;
+- (BOOL)nn_decimalIsLessThanOrEqualTo:(id)value;
 
 @end
 

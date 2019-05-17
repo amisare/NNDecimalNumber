@@ -93,7 +93,7 @@ $ gem install cocoapods
 在 `podfile` 中添加：
 
 ```ruby
-pod 'NNDecimalNumber', '~> 0.1.0'
+pod 'NNDecimalNumber', '~> 0.2.0'
 ```
 
 然后在终端执行：

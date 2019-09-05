@@ -1,5 +1,5 @@
 PODS:
-  - NNDecimalNumber (0.0.1)
+  - NNDecimalNumber (0.1.0)
 
 DEPENDENCIES:
   - NNDecimalNumber (from `NNDecimalNumber.podspec`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: NNDecimalNumber.podspec
 
 SPEC CHECKSUMS:
-  NNDecimalNumber: c7d13db342a223b313b44e7d14b202ebbe9cd392
+  NNDecimalNumber: 7acd9af52d1d77662331c6dc0cfc1e6a01108755
 
 PODFILE CHECKSUM: 534db7ac72d1362b30ea93b4c152ebe9d6b3aba6
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.5.3

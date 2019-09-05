@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import <NNDecimalNumber/NNDecimalNumber.h>
+#import "DecimalNumberBehavior.h"
+#import "DecimalNumberGlobalBehavior.h"
 
 @interface ViewController ()
 
@@ -71,6 +73,40 @@
         NSString *c = @"2".nn_mul([UIView new]);
         NSLog(@"%@", c);
         NSLog(@"%@", c.nn_formula);
+    }
+    
+    {
+    }
+    
+    {
+        {
+            [NSString nn_setDecimalNumberGlobalBehavior:[DecimalNumberGlobalBehavior class]];
+            NSString *c = @"1".nn_div(@(3));
+            NSLog(@"%@", c);
+            NSLog(@"%@", c.nn_formula);
+        }
+        {
+            DecimalNumberBehavior *behavior = [DecimalNumberBehavior new];
+            NSString *c = @"1".nn_behavior(behavior).nn_div(@(3)).nn_div(@(2));
+            NSLog(@"%@", c);
+            NSLog(@"%@", c.nn_formula);
+        }
+        {
+            NSDecimalNumberHandler *behavior = [[NSDecimalNumberHandler alloc] initWithRoundingMode:NSRoundPlain
+                                                                                              scale:4
+                                                                                   raiseOnExactness:false
+                                                                                    raiseOnOverflow:false
+                                                                                   raiseOnUnderflow:false
+                                                                                raiseOnDivideByZero:false];
+            NSString *c = @"1".nn_behavior(behavior).nn_div(@(3));
+            NSLog(@"%@", c);
+            NSLog(@"%@", c.nn_formula);
+        }
+        {
+            NSString *c = @"1".nn_div(@(3));
+            NSLog(@"%@", c);
+            NSLog(@"%@", c.nn_formula);
+        }
     }
  }
 

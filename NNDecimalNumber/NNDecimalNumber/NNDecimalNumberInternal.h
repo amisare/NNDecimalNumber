@@ -15,6 +15,12 @@
 
 @end
 
+@interface NSString (NNDecimalNumberBehavior)
+
+@property (nonatomic, copy) id <NSDecimalNumberBehaviors> nn_decimalNumberBehavior;
+
+@end
+
 @interface NSDecimalNumber (NNDecimalNumberStringValue)
 
 @property (nonatomic, copy) NSString *nn_stringValue;

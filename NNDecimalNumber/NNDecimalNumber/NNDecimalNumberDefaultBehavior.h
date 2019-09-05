@@ -1,5 +1,5 @@
 //
-//  NNDecimalNumberHandler.h
+//  NNDecimalNumberDefaultBehavior.h
 //  NNDecimalNumber
 //
 //  Created by GuHaijun on 2019/4/24.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NNDecimalNumberHandler : NSObject <NSDecimalNumberBehaviors>
+@interface NNDecimalNumberDefaultBehavior : NSObject <NSDecimalNumberBehaviors>
 
 @end

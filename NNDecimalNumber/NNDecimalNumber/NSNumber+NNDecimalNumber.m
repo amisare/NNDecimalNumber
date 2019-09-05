@@ -20,6 +20,11 @@
 
 @implementation NSNumber (NNDecimalNumber)
 
+#pragma mark - NNDecimalNumberBehavior
+- (NSString *(^)(id <NSDecimalNumberBehaviors>))nn_behavior {
+    return self.nn_stringValue.nn_behavior;
+}
+
 #pragma mark - NNDecimalNumber
 - (NSString *(^)(id))nn_add {
     return self.nn_stringValue.nn_add;

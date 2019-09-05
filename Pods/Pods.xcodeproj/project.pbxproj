@@ -7,146 +7,137 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22AB3B4018483F8EB9BA4F9A7730B211 /* NNDecimalNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE1AE629F152EF2E9660DC01D4BD3BC /* NNDecimalNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28B90E53CDE3037E833C1F4428CFD9EA /* Pods-NNDecimalNumberDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BEA990648CBBBE7231FF3BAEF4ECD4 /* Pods-NNDecimalNumberDemo-dummy.m */; };
-		38CFCE06A09801CA3447D30B3EFDE13D /* NSString+NNDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DF16A5FA5E951E0EA35BB704ACB6D7EE /* NSString+NNDecimalNumber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4A26C087BD4B6E64183C6FDF8C354AC5 /* NNDecimalNumberInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 95E16A7E586974232D76A7502BF79556 /* NNDecimalNumberInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		587810ECE468E1A1F7D1C29F4A737DE4 /* Pods-NNDecimalNumberDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C256C0B98F23917E3980CEFB9319EBDC /* Pods-NNDecimalNumberDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EEF539C884BC269B28D11F3F832AE7E /* NNDecimalNumberHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 51F4481DCD7F1FD95D4C394CB0CCFA30 /* NNDecimalNumberHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6DBF90A22FBAEBBA6638179183A27312 /* NNDecimalNumber-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 334F7BF7D02C183C76E3052B4A3DDE77 /* NNDecimalNumber-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77FCD7181E07DF0C7BFD5A9DCEE0A104 /* NNDecimalNumber-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 699973EB433F7F9743FE3C098C61CF72 /* NNDecimalNumber-dummy.m */; };
-		916F25E5B78C625D5BB508976DF6375C /* NSDecimalNumber+NNDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D40CAA00423DC628E27A67052ED6A4 /* NSDecimalNumber+NNDecimalNumber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		93E9E11B0B0E3E5B214B6281F0BDCD35 /* NSNumber+NNDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A2316E30018F6BDD95B6A7E1444F3 /* NSNumber+NNDecimalNumber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9B1859F7F9848AA1D8863FAF4038675B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		AB87B249F2688F71E9190859B3209505 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		C278D7DE84FCC0264A8216F719948086 /* NNDecimalNumberHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ED7CEE46D9688B7B44444C547CBCF4 /* NNDecimalNumberHandler.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1CA2D7A9B31CB9B99B36C53554C0E9D4 /* Pods-NNDecimalNumberDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65B5FA9FBC3A5D6CFADE768A2049690C /* Pods-NNDecimalNumberDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		361D73322FFC422B9CDD9A9416AB16B2 /* NNDecimalNumberDefaultBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 431CF46CCD2467E9CDF3FEFCE5322817 /* NNDecimalNumberDefaultBehavior.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		553DD0922B55AC9181368B38867FE793 /* NNDecimalNumber-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBEEC72BB1D6CF4DAE130D41D2E2862B /* NNDecimalNumber-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F77D9B500D713C762FEEF281A7E054E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		691101A83AC49913AFB8F07C7DC2B34A /* NSNumber+NNDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 189C5825EBA6EBB66D37CD44651C01A6 /* NSNumber+NNDecimalNumber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6AA7C2BEE315DA99323D50BA631F3C39 /* NNDecimalNumberDefaultBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = B6940878E17DDE2765D88D765423A0E6 /* NNDecimalNumberDefaultBehavior.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		78C94AE1A39A36428C1B28746B3DEFA8 /* NSDecimalNumber+NNDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF9E173022D20D9602E256A46EC4440 /* NSDecimalNumber+NNDecimalNumber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		89B6F561A4F6ECF2FB038AD2C9C69401 /* NNDecimalNumberInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2C95E13C10F2EBB95BCD29A88BC6E3 /* NNDecimalNumberInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		944BCA98DCDECCA4E5862E77AF0C5840 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		AED7D0C838B9FB818DC982B5B870BBFF /* NSString+NNDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 41376C57FC2BA8F81E97CC0BF5CF8FD6 /* NSString+NNDecimalNumber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D7CD1E92017C817B77F6CF919929CFC6 /* NNDecimalNumber-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1517FDD273DE5AEAC7D4ED14EBACD8 /* NNDecimalNumber-dummy.m */; };
+		E646BAA4FFB18FD04D703417065727AE /* NNDecimalNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E63105FC3BF3E220D524A571E28E7D /* NNDecimalNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1EFC0A05C2C19521B7A6C23B07F75CE /* Pods-NNDecimalNumberDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C316BB56690CCE6DF935C525DDEB41DC /* Pods-NNDecimalNumberDemo-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6B114FC75DC1D0D12BA180DEB2E792AA /* PBXContainerItemProxy */ = {
+		2D37E752AEAA033F0A453F6203E9A968 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 40CCE0FDC50E38F5624495792481308A;
+			remoteGlobalIDString = E8B91215A67DC25B0B6F009E14901AB3;
 			remoteInfo = NNDecimalNumber;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1AC702A479669A9DA565DB95F08BD97C /* NNDecimalNumber.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NNDecimalNumber.xcconfig; sourceTree = "<group>"; };
-		220B39CF5D4EEFF55F323D10FAEA1FBE /* NNDecimalNumber.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NNDecimalNumber.modulemap; sourceTree = "<group>"; };
-		227A4419E5A96BE535D1B4BE1EEDD15A /* Pods-NNDecimalNumberDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NNDecimalNumberDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2BE04DFA4760C6DE04A4C755B58DB43C /* NNDecimalNumber-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NNDecimalNumber-Info.plist"; sourceTree = "<group>"; };
-		2E7A2316E30018F6BDD95B6A7E1444F3 /* NSNumber+NNDecimalNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+NNDecimalNumber.m"; path = "NNDecimalNumber/NNDecimalNumber/NSNumber+NNDecimalNumber.m"; sourceTree = "<group>"; };
-		334F7BF7D02C183C76E3052B4A3DDE77 /* NNDecimalNumber-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NNDecimalNumber-umbrella.h"; sourceTree = "<group>"; };
-		375E49E9367F078B630B8754D7777247 /* Pods-NNDecimalNumberDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNDecimalNumberDemo.release.xcconfig"; sourceTree = "<group>"; };
-		39057CE9D2A4FEC9E4764255B21DDB87 /* Pods-NNDecimalNumberDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNDecimalNumberDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		431975E6E70655080A1BD44C6DABD7C8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		51F4481DCD7F1FD95D4C394CB0CCFA30 /* NNDecimalNumberHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NNDecimalNumberHandler.h; path = NNDecimalNumber/NNDecimalNumber/NNDecimalNumberHandler.h; sourceTree = "<group>"; };
-		64B9B2F279C0022BEC6348C0BF644A31 /* Pods_NNDecimalNumberDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNDecimalNumberDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		699973EB433F7F9743FE3C098C61CF72 /* NNDecimalNumber-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NNDecimalNumber-dummy.m"; sourceTree = "<group>"; };
-		7685111D5A32C042EA1308E94BDCDB17 /* Pods-NNDecimalNumberDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NNDecimalNumberDemo-Info.plist"; sourceTree = "<group>"; };
-		80D40CAA00423DC628E27A67052ED6A4 /* NSDecimalNumber+NNDecimalNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDecimalNumber+NNDecimalNumber.m"; path = "NNDecimalNumber/NNDecimalNumber/NSDecimalNumber+NNDecimalNumber.m"; sourceTree = "<group>"; };
-		95E16A7E586974232D76A7502BF79556 /* NNDecimalNumberInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NNDecimalNumberInternal.h; path = NNDecimalNumber/NNDecimalNumber/NNDecimalNumberInternal.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1DF4C107581F8B729FA9370EAB8B169 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		A7ED7CEE46D9688B7B44444C547CBCF4 /* NNDecimalNumberHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NNDecimalNumberHandler.m; path = NNDecimalNumber/NNDecimalNumber/NNDecimalNumberHandler.m; sourceTree = "<group>"; };
-		B6974CCDBEE5FB84BB2C690BE8D559D8 /* Pods-NNDecimalNumberDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NNDecimalNumberDemo-frameworks.sh"; sourceTree = "<group>"; };
-		B6BEA990648CBBBE7231FF3BAEF4ECD4 /* Pods-NNDecimalNumberDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NNDecimalNumberDemo-dummy.m"; sourceTree = "<group>"; };
-		BFCF501C7851E2588E62EE5BA73DE243 /* Pods-NNDecimalNumberDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NNDecimalNumberDemo.modulemap"; sourceTree = "<group>"; };
-		C256C0B98F23917E3980CEFB9319EBDC /* Pods-NNDecimalNumberDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NNDecimalNumberDemo-umbrella.h"; sourceTree = "<group>"; };
-		CAE1AE629F152EF2E9660DC01D4BD3BC /* NNDecimalNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NNDecimalNumber.h; path = NNDecimalNumber/NNDecimalNumber/NNDecimalNumber.h; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DCEF540E5807547C782696C7676BED46 /* NNDecimalNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NNDecimalNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF16A5FA5E951E0EA35BB704ACB6D7EE /* NSString+NNDecimalNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+NNDecimalNumber.m"; path = "NNDecimalNumber/NNDecimalNumber/NSString+NNDecimalNumber.m"; sourceTree = "<group>"; };
-		E1B0291470CE97F678C1A036102E4BAB /* NNDecimalNumber.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NNDecimalNumber.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		E9932397E0857EDCCF1D5F5F94113B27 /* Pods-NNDecimalNumberDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NNDecimalNumberDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		FD7AF7387D90D06892472D1109E0966F /* NNDecimalNumber-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NNDecimalNumber-prefix.pch"; sourceTree = "<group>"; };
+		0F6EEC06A3A8C5F223936CD6F3D88CB2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		189C5825EBA6EBB66D37CD44651C01A6 /* NSNumber+NNDecimalNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+NNDecimalNumber.m"; path = "NNDecimalNumber/NNDecimalNumber/NSNumber+NNDecimalNumber.m"; sourceTree = "<group>"; };
+		1B1517FDD273DE5AEAC7D4ED14EBACD8 /* NNDecimalNumber-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NNDecimalNumber-dummy.m"; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2C3F5349532B725B10B5C8CA1331BB8F /* Pods-NNDecimalNumberDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNDecimalNumberDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3991CFFE7F39161620370ABA615B52B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41376C57FC2BA8F81E97CC0BF5CF8FD6 /* NSString+NNDecimalNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+NNDecimalNumber.m"; path = "NNDecimalNumber/NNDecimalNumber/NSString+NNDecimalNumber.m"; sourceTree = "<group>"; };
+		4196C62027AB6EAD8516714FB20744F4 /* NNDecimalNumber-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NNDecimalNumber-prefix.pch"; sourceTree = "<group>"; };
+		431CF46CCD2467E9CDF3FEFCE5322817 /* NNDecimalNumberDefaultBehavior.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NNDecimalNumberDefaultBehavior.m; path = NNDecimalNumber/NNDecimalNumber/NNDecimalNumberDefaultBehavior.m; sourceTree = "<group>"; };
+		4C16FE3F74BE92C9CA4659583EC74048 /* Pods-NNDecimalNumberDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NNDecimalNumberDemo-resources.sh"; sourceTree = "<group>"; };
+		4F7E627D18C0D0E1CDF676391AEB4B96 /* NNDecimalNumber.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NNDecimalNumber.modulemap; sourceTree = "<group>"; };
+		54C1D799241896DA698A13DA3CBBC257 /* NNDecimalNumber.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NNDecimalNumber.xcconfig; sourceTree = "<group>"; };
+		61E63105FC3BF3E220D524A571E28E7D /* NNDecimalNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NNDecimalNumber.h; path = NNDecimalNumber/NNDecimalNumber/NNDecimalNumber.h; sourceTree = "<group>"; };
+		64B9B2F279C0022BEC6348C0BF644A31 /* Pods_NNDecimalNumberDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NNDecimalNumberDemo.framework; path = "Pods-NNDecimalNumberDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B5FA9FBC3A5D6CFADE768A2049690C /* Pods-NNDecimalNumberDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NNDecimalNumberDemo-umbrella.h"; sourceTree = "<group>"; };
+		7E2C95E13C10F2EBB95BCD29A88BC6E3 /* NNDecimalNumberInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NNDecimalNumberInternal.h; path = NNDecimalNumber/NNDecimalNumber/NNDecimalNumberInternal.h; sourceTree = "<group>"; };
+		85F367F5B5B677249B5F21BFB77895F2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8AE0C233D39C19F1E066A1776E196AB1 /* NNDecimalNumber.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = NNDecimalNumber.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AD026DAE3E70979600E1C0DF0AD32986 /* Pods-NNDecimalNumberDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NNDecimalNumberDemo-frameworks.sh"; sourceTree = "<group>"; };
+		AD8A16A02FEC6E167572FE367F4C0BD9 /* Pods-NNDecimalNumberDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NNDecimalNumberDemo.modulemap"; sourceTree = "<group>"; };
+		B6940878E17DDE2765D88D765423A0E6 /* NNDecimalNumberDefaultBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NNDecimalNumberDefaultBehavior.h; path = NNDecimalNumber/NNDecimalNumber/NNDecimalNumberDefaultBehavior.h; sourceTree = "<group>"; };
+		BCF9E173022D20D9602E256A46EC4440 /* NSDecimalNumber+NNDecimalNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDecimalNumber+NNDecimalNumber.m"; path = "NNDecimalNumber/NNDecimalNumber/NSDecimalNumber+NNDecimalNumber.m"; sourceTree = "<group>"; };
+		C316BB56690CCE6DF935C525DDEB41DC /* Pods-NNDecimalNumberDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NNDecimalNumberDemo-dummy.m"; sourceTree = "<group>"; };
+		CAC62B78275967352068B2A2D0D7C3A0 /* Pods-NNDecimalNumberDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NNDecimalNumberDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DCEF540E5807547C782696C7676BED46 /* NNDecimalNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NNDecimalNumber.framework; path = NNDecimalNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C300827596973C7B4112AC9674B825 /* Pods-NNDecimalNumberDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNDecimalNumberDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EF5E8529CD5D6F371D40E0B2CDEA66A8 /* Pods-NNDecimalNumberDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NNDecimalNumberDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		F00F6BDCCFD062B113BFE6DE7C4AD14F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBEEC72BB1D6CF4DAE130D41D2E2862B /* NNDecimalNumber-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NNDecimalNumber-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		11BF594E951AD13AAC6CC6D85E32057F /* Frameworks */ = {
+		1D1706A7D43577FB61F9D57912727521 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB87B249F2688F71E9190859B3209505 /* Foundation.framework in Frameworks */,
+				944BCA98DCDECCA4E5862E77AF0C5840 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF9A3D70988403199F7FE3932484B5D9 /* Frameworks */ = {
+		B99C545F4AA310F3271F74E0C3BC72CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B1859F7F9848AA1D8863FAF4038675B /* Foundation.framework in Frameworks */,
+				5F77D9B500D713C762FEEF281A7E054E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		31E60A75BA54A1CDB9218136F5237DE0 /* Support Files */ = {
+		2D0E6F990BFF42EB2176CCDA1DC8F38C /* NNDecimalNumber */ = {
 			isa = PBXGroup;
 			children = (
-				220B39CF5D4EEFF55F323D10FAEA1FBE /* NNDecimalNumber.modulemap */,
-				1AC702A479669A9DA565DB95F08BD97C /* NNDecimalNumber.xcconfig */,
-				699973EB433F7F9743FE3C098C61CF72 /* NNDecimalNumber-dummy.m */,
-				2BE04DFA4760C6DE04A4C755B58DB43C /* NNDecimalNumber-Info.plist */,
-				FD7AF7387D90D06892472D1109E0966F /* NNDecimalNumber-prefix.pch */,
-				334F7BF7D02C183C76E3052B4A3DDE77 /* NNDecimalNumber-umbrella.h */,
+				61E63105FC3BF3E220D524A571E28E7D /* NNDecimalNumber.h */,
+				B6940878E17DDE2765D88D765423A0E6 /* NNDecimalNumberDefaultBehavior.h */,
+				431CF46CCD2467E9CDF3FEFCE5322817 /* NNDecimalNumberDefaultBehavior.m */,
+				7E2C95E13C10F2EBB95BCD29A88BC6E3 /* NNDecimalNumberInternal.h */,
+				BCF9E173022D20D9602E256A46EC4440 /* NSDecimalNumber+NNDecimalNumber.m */,
+				189C5825EBA6EBB66D37CD44651C01A6 /* NSNumber+NNDecimalNumber.m */,
+				41376C57FC2BA8F81E97CC0BF5CF8FD6 /* NSString+NNDecimalNumber.m */,
+				F982590F96EDD22712A5D56B3E4A8394 /* Pod */,
+				45655751B78CC6940BC3D536A8B8ED3D /* Support Files */,
+			);
+			name = NNDecimalNumber;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		45655751B78CC6940BC3D536A8B8ED3D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3991CFFE7F39161620370ABA615B52B4 /* Info.plist */,
+				4F7E627D18C0D0E1CDF676391AEB4B96 /* NNDecimalNumber.modulemap */,
+				54C1D799241896DA698A13DA3CBBC257 /* NNDecimalNumber.xcconfig */,
+				1B1517FDD273DE5AEAC7D4ED14EBACD8 /* NNDecimalNumber-dummy.m */,
+				4196C62027AB6EAD8516714FB20744F4 /* NNDecimalNumber-prefix.pch */,
+				FBEEC72BB1D6CF4DAE130D41D2E2862B /* NNDecimalNumber-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Pods/Target Support Files/NNDecimalNumber";
 			sourceTree = "<group>";
 		};
-		519408E0810542EC3AB040025C607D21 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C33C3D2C3F4ABCF42131DC381973F107 /* Pods-NNDecimalNumberDemo */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		6E8C11C98E55F883C53258804B3CF453 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F7B85730972A9ACDBCFE87EBD6B30D23 /* NNDecimalNumber */,
+				2D0E6F990BFF42EB2176CCDA1DC8F38C /* NNDecimalNumber */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		8B0C64C55F75AD35FE2EB97BAEF30E11 /* Pod */ = {
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A1DF4C107581F8B729FA9370EAB8B169 /* LICENSE */,
-				E1B0291470CE97F678C1A036102E4BAB /* NNDecimalNumber.podspec */,
-				431975E6E70655080A1BD44C6DABD7C8 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C33C3D2C3F4ABCF42131DC381973F107 /* Pods-NNDecimalNumberDemo */ = {
+		CC260450118CA465ABFBCE8EFEEC181D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BFCF501C7851E2588E62EE5BA73DE243 /* Pods-NNDecimalNumberDemo.modulemap */,
-				227A4419E5A96BE535D1B4BE1EEDD15A /* Pods-NNDecimalNumberDemo-acknowledgements.markdown */,
-				E9932397E0857EDCCF1D5F5F94113B27 /* Pods-NNDecimalNumberDemo-acknowledgements.plist */,
-				B6BEA990648CBBBE7231FF3BAEF4ECD4 /* Pods-NNDecimalNumberDemo-dummy.m */,
-				B6974CCDBEE5FB84BB2C690BE8D559D8 /* Pods-NNDecimalNumberDemo-frameworks.sh */,
-				7685111D5A32C042EA1308E94BDCDB17 /* Pods-NNDecimalNumberDemo-Info.plist */,
-				C256C0B98F23917E3980CEFB9319EBDC /* Pods-NNDecimalNumberDemo-umbrella.h */,
-				39057CE9D2A4FEC9E4764255B21DDB87 /* Pods-NNDecimalNumberDemo.debug.xcconfig */,
-				375E49E9367F078B630B8754D7777247 /* Pods-NNDecimalNumberDemo.release.xcconfig */,
+				CFA5407AF323DA006BF1EC9E561B0BD6 /* Pods-NNDecimalNumberDemo */,
 			);
-			name = "Pods-NNDecimalNumberDemo";
-			path = "Target Support Files/Pods-NNDecimalNumberDemo";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CE9FB9896477E99F6DE31860B13BC66A /* Products */ = {
@@ -161,72 +152,102 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
 				6E8C11C98E55F883C53258804B3CF453 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				CE9FB9896477E99F6DE31860B13BC66A /* Products */,
-				519408E0810542EC3AB040025C607D21 /* Targets Support Files */,
+				CC260450118CA465ABFBCE8EFEEC181D /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		CFA5407AF323DA006BF1EC9E561B0BD6 /* Pods-NNDecimalNumberDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F00F6BDCCFD062B113BFE6DE7C4AD14F /* Info.plist */,
+				AD8A16A02FEC6E167572FE367F4C0BD9 /* Pods-NNDecimalNumberDemo.modulemap */,
+				CAC62B78275967352068B2A2D0D7C3A0 /* Pods-NNDecimalNumberDemo-acknowledgements.markdown */,
+				EF5E8529CD5D6F371D40E0B2CDEA66A8 /* Pods-NNDecimalNumberDemo-acknowledgements.plist */,
+				C316BB56690CCE6DF935C525DDEB41DC /* Pods-NNDecimalNumberDemo-dummy.m */,
+				AD026DAE3E70979600E1C0DF0AD32986 /* Pods-NNDecimalNumberDemo-frameworks.sh */,
+				4C16FE3F74BE92C9CA4659583EC74048 /* Pods-NNDecimalNumberDemo-resources.sh */,
+				65B5FA9FBC3A5D6CFADE768A2049690C /* Pods-NNDecimalNumberDemo-umbrella.h */,
+				2C3F5349532B725B10B5C8CA1331BB8F /* Pods-NNDecimalNumberDemo.debug.xcconfig */,
+				E1C300827596973C7B4112AC9674B825 /* Pods-NNDecimalNumberDemo.release.xcconfig */,
+			);
+			name = "Pods-NNDecimalNumberDemo";
+			path = "Target Support Files/Pods-NNDecimalNumberDemo";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F7B85730972A9ACDBCFE87EBD6B30D23 /* NNDecimalNumber */ = {
+		F982590F96EDD22712A5D56B3E4A8394 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				CAE1AE629F152EF2E9660DC01D4BD3BC /* NNDecimalNumber.h */,
-				51F4481DCD7F1FD95D4C394CB0CCFA30 /* NNDecimalNumberHandler.h */,
-				A7ED7CEE46D9688B7B44444C547CBCF4 /* NNDecimalNumberHandler.m */,
-				95E16A7E586974232D76A7502BF79556 /* NNDecimalNumberInternal.h */,
-				80D40CAA00423DC628E27A67052ED6A4 /* NSDecimalNumber+NNDecimalNumber.m */,
-				2E7A2316E30018F6BDD95B6A7E1444F3 /* NSNumber+NNDecimalNumber.m */,
-				DF16A5FA5E951E0EA35BB704ACB6D7EE /* NSString+NNDecimalNumber.m */,
-				8B0C64C55F75AD35FE2EB97BAEF30E11 /* Pod */,
-				31E60A75BA54A1CDB9218136F5237DE0 /* Support Files */,
+				0F6EEC06A3A8C5F223936CD6F3D88CB2 /* LICENSE */,
+				8AE0C233D39C19F1E066A1776E196AB1 /* NNDecimalNumber.podspec */,
+				85F367F5B5B677249B5F21BFB77895F2 /* README.md */,
 			);
-			name = NNDecimalNumber;
-			path = ..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		ACF9AD7FA1D40917CE2CA6478672B8EE /* Headers */ = {
+		71110F245C27C2DDBD3BF97F4ECF46D8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				587810ECE468E1A1F7D1C29F4A737DE4 /* Pods-NNDecimalNumberDemo-umbrella.h in Headers */,
+				1CA2D7A9B31CB9B99B36C53554C0E9D4 /* Pods-NNDecimalNumberDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4C1E9CE2706F50F7875C3BE033FEA32 /* Headers */ = {
+		83D1F6AA2FA6B547C2E0FFB8288609AC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DBF90A22FBAEBBA6638179183A27312 /* NNDecimalNumber-umbrella.h in Headers */,
-				22AB3B4018483F8EB9BA4F9A7730B211 /* NNDecimalNumber.h in Headers */,
-				5EEF539C884BC269B28D11F3F832AE7E /* NNDecimalNumberHandler.h in Headers */,
-				4A26C087BD4B6E64183C6FDF8C354AC5 /* NNDecimalNumberInternal.h in Headers */,
+				553DD0922B55AC9181368B38867FE793 /* NNDecimalNumber-umbrella.h in Headers */,
+				E646BAA4FFB18FD04D703417065727AE /* NNDecimalNumber.h in Headers */,
+				6AA7C2BEE315DA99323D50BA631F3C39 /* NNDecimalNumberDefaultBehavior.h in Headers */,
+				89B6F561A4F6ECF2FB038AD2C9C69401 /* NNDecimalNumberInternal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		40CCE0FDC50E38F5624495792481308A /* NNDecimalNumber */ = {
+		CD7AC36F854C5F4CE5294B95937481B5 /* Pods-NNDecimalNumberDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 020988EDC690C51081CC42CD0C9BC730 /* Build configuration list for PBXNativeTarget "NNDecimalNumber" */;
+			buildConfigurationList = D9585539ABD1D75BC1105B7DA77354C6 /* Build configuration list for PBXNativeTarget "Pods-NNDecimalNumberDemo" */;
 			buildPhases = (
-				D4C1E9CE2706F50F7875C3BE033FEA32 /* Headers */,
-				E51FFA61182E380EE5DEC0A3849892FF /* Sources */,
-				11BF594E951AD13AAC6CC6D85E32057F /* Frameworks */,
-				0A576AE779B788C17F3F672C6367139C /* Resources */,
+				71110F245C27C2DDBD3BF97F4ECF46D8 /* Headers */,
+				711F9B8D85135D5AB882EC3FDB7EB889 /* Sources */,
+				1D1706A7D43577FB61F9D57912727521 /* Frameworks */,
+				0993DAB1FB7530BCAA8C88D42A733D6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF2789AA4AD33F5C2A462702049D54EC /* PBXTargetDependency */,
+			);
+			name = "Pods-NNDecimalNumberDemo";
+			productName = "Pods-NNDecimalNumberDemo";
+			productReference = 64B9B2F279C0022BEC6348C0BF644A31 /* Pods_NNDecimalNumberDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8B91215A67DC25B0B6F009E14901AB3 /* NNDecimalNumber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 448C0418DD2F1264748B67539E72EB45 /* Build configuration list for PBXNativeTarget "NNDecimalNumber" */;
+			buildPhases = (
+				83D1F6AA2FA6B547C2E0FFB8288609AC /* Headers */,
+				48F61AEBB0D4A0EE96A1B19816F5A7C1 /* Sources */,
+				B99C545F4AA310F3271F74E0C3BC72CC /* Frameworks */,
+				B349680CDC4855D22CCC739A2BB0DFE9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -237,33 +258,14 @@
 			productReference = DCEF540E5807547C782696C7676BED46 /* NNDecimalNumber.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		61905CAB068DCD21E940E329739A8A8F /* Pods-NNDecimalNumberDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FFE15AED3493FC7AEE3924295D347D27 /* Build configuration list for PBXNativeTarget "Pods-NNDecimalNumberDemo" */;
-			buildPhases = (
-				ACF9AD7FA1D40917CE2CA6478672B8EE /* Headers */,
-				BA795FC5825CC0BEDD15EE80A83992FA /* Sources */,
-				BF9A3D70988403199F7FE3932484B5D9 /* Frameworks */,
-				7C5003163BDE61075170FB7F7DB6F7B5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E2614D48670945163F2BE8E979658912 /* PBXTargetDependency */,
-			);
-			name = "Pods-NNDecimalNumberDemo";
-			productName = "Pods-NNDecimalNumberDemo";
-			productReference = 64B9B2F279C0022BEC6348C0BF644A31 /* Pods_NNDecimalNumberDemo.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1020;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -271,28 +273,27 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = CE9FB9896477E99F6DE31860B13BC66A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				40CCE0FDC50E38F5624495792481308A /* NNDecimalNumber */,
-				61905CAB068DCD21E940E329739A8A8F /* Pods-NNDecimalNumberDemo */,
+				E8B91215A67DC25B0B6F009E14901AB3 /* NNDecimalNumber */,
+				CD7AC36F854C5F4CE5294B95937481B5 /* Pods-NNDecimalNumberDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0A576AE779B788C17F3F672C6367139C /* Resources */ = {
+		0993DAB1FB7530BCAA8C88D42A733D6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C5003163BDE61075170FB7F7DB6F7B5 /* Resources */ = {
+		B349680CDC4855D22CCC739A2BB0DFE9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,43 +303,113 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BA795FC5825CC0BEDD15EE80A83992FA /* Sources */ = {
+		48F61AEBB0D4A0EE96A1B19816F5A7C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28B90E53CDE3037E833C1F4428CFD9EA /* Pods-NNDecimalNumberDemo-dummy.m in Sources */,
+				D7CD1E92017C817B77F6CF919929CFC6 /* NNDecimalNumber-dummy.m in Sources */,
+				361D73322FFC422B9CDD9A9416AB16B2 /* NNDecimalNumberDefaultBehavior.m in Sources */,
+				78C94AE1A39A36428C1B28746B3DEFA8 /* NSDecimalNumber+NNDecimalNumber.m in Sources */,
+				691101A83AC49913AFB8F07C7DC2B34A /* NSNumber+NNDecimalNumber.m in Sources */,
+				AED7D0C838B9FB818DC982B5B870BBFF /* NSString+NNDecimalNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E51FFA61182E380EE5DEC0A3849892FF /* Sources */ = {
+		711F9B8D85135D5AB882EC3FDB7EB889 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77FCD7181E07DF0C7BFD5A9DCEE0A104 /* NNDecimalNumber-dummy.m in Sources */,
-				C278D7DE84FCC0264A8216F719948086 /* NNDecimalNumberHandler.m in Sources */,
-				916F25E5B78C625D5BB508976DF6375C /* NSDecimalNumber+NNDecimalNumber.m in Sources */,
-				93E9E11B0B0E3E5B214B6281F0BDCD35 /* NSNumber+NNDecimalNumber.m in Sources */,
-				38CFCE06A09801CA3447D30B3EFDE13D /* NSString+NNDecimalNumber.m in Sources */,
+				F1EFC0A05C2C19521B7A6C23B07F75CE /* Pods-NNDecimalNumberDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E2614D48670945163F2BE8E979658912 /* PBXTargetDependency */ = {
+		FF2789AA4AD33F5C2A462702049D54EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NNDecimalNumber;
-			target = 40CCE0FDC50E38F5624495792481308A /* NNDecimalNumber */;
-			targetProxy = 6B114FC75DC1D0D12BA180DEB2E792AA /* PBXContainerItemProxy */;
+			target = E8B91215A67DC25B0B6F009E14901AB3 /* NNDecimalNumber */;
+			targetProxy = 2D37E752AEAA033F0A453F6203E9A968 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
+		284CE1AC158EDBCAAA3C6B8BB1352EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54C1D799241896DA698A13DA3CBBC257 /* NNDecimalNumber.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NNDecimalNumber/NNDecimalNumber-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NNDecimalNumber/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NNDecimalNumber/NNDecimalNumber.modulemap";
+				PRODUCT_MODULE_NAME = NNDecimalNumber;
+				PRODUCT_NAME = NNDecimalNumber;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2FF04E55AE2D443593D31EF0248083F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C3F5349532B725B10B5C8CA1331BB8F /* Pods-NNDecimalNumberDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NNDecimalNumberDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E1E8F4C5B356DDEEC76DDFDC606DC85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -367,6 +438,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -390,16 +463,50 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
+		593411322DCE191BCE4ECFB216B98439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54C1D799241896DA698A13DA3CBBC257 /* NNDecimalNumber.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NNDecimalNumber/NNDecimalNumber-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NNDecimalNumber/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NNDecimalNumber/NNDecimalNumber.modulemap";
+				PRODUCT_MODULE_NAME = NNDecimalNumber;
+				PRODUCT_NAME = NNDecimalNumber;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		62780A8B4B44B3DFA98345371325579F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -428,6 +535,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -455,83 +564,14 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		4BF80CD073AE71C3132791FD02787C36 /* Debug */ = {
+		8E777CBAC2A62ABA53405604CC09F000 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AC702A479669A9DA565DB95F08BD97C /* NNDecimalNumber.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NNDecimalNumber/NNDecimalNumber-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NNDecimalNumber/NNDecimalNumber-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NNDecimalNumber/NNDecimalNumber.modulemap";
-				PRODUCT_MODULE_NAME = NNDecimalNumber;
-				PRODUCT_NAME = NNDecimalNumber;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5452731CBF18C6688F0A9CC9EC816288 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AC702A479669A9DA565DB95F08BD97C /* NNDecimalNumber.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NNDecimalNumber/NNDecimalNumber-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NNDecimalNumber/NNDecimalNumber-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NNDecimalNumber/NNDecimalNumber.modulemap";
-				PRODUCT_MODULE_NAME = NNDecimalNumber;
-				PRODUCT_NAME = NNDecimalNumber;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		693CE89E32EAFBADEC97990C5687743F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39057CE9D2A4FEC9E4764255B21DDB87 /* Pods-NNDecimalNumberDemo.debug.xcconfig */;
+			baseConfigurationReference = E1C300827596973C7B4112AC9674B825 /* Pods-NNDecimalNumberDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -543,44 +583,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BE9D3C43500B2F8CAC0D3C922916258D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 375E49E9367F078B630B8754D7777247 /* Pods-NNDecimalNumberDemo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-NNDecimalNumberDemo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -607,11 +610,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		020988EDC690C51081CC42CD0C9BC730 /* Build configuration list for PBXNativeTarget "NNDecimalNumber" */ = {
+		448C0418DD2F1264748B67539E72EB45 /* Build configuration list for PBXNativeTarget "NNDecimalNumber" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BF80CD073AE71C3132791FD02787C36 /* Debug */,
-				5452731CBF18C6688F0A9CC9EC816288 /* Release */,
+				284CE1AC158EDBCAAA3C6B8BB1352EE2 /* Debug */,
+				593411322DCE191BCE4ECFB216B98439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -619,17 +622,17 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
-				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
+				62780A8B4B44B3DFA98345371325579F /* Debug */,
+				3E1E8F4C5B356DDEEC76DDFDC606DC85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFE15AED3493FC7AEE3924295D347D27 /* Build configuration list for PBXNativeTarget "Pods-NNDecimalNumberDemo" */ = {
+		D9585539ABD1D75BC1105B7DA77354C6 /* Build configuration list for PBXNativeTarget "Pods-NNDecimalNumberDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				693CE89E32EAFBADEC97990C5687743F /* Debug */,
-				BE9D3C43500B2F8CAC0D3C922916258D /* Release */,
+				2FF04E55AE2D443593D31EF0248083F3 /* Debug */,
+				8E777CBAC2A62ABA53405604CC09F000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

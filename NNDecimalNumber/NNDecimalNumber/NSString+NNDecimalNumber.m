@@ -8,7 +8,7 @@
 
 #import "NNDecimalNumber.h"
 #import "NNDecimalNumberInternal.h"
-#import "NNDecimalNumberHandler.h"
+#import "NNDecimalNumberDefaultBehavior.h"
 #import <objc/runtime.h>
 
 #pragma mark - NNDecimalNumberFormulaStack
@@ -27,6 +27,20 @@
 @end
 
 
+@implementation NSString (NNDecimalNumberBehavior)
+
+- (id<NSDecimalNumberBehaviors>)nn_decimalNumberBehavior {
+    id<NSDecimalNumberBehaviors> behavior = objc_getAssociatedObject(self, _cmd);
+    return behavior;
+}
+
+- (void)setNn_decimalNumberBehavior:(id<NSDecimalNumberBehaviors>)nn_decimalNumberBehavior {
+    objc_setAssociatedObject(self, @selector(nn_decimalNumberBehavior), nn_decimalNumberBehavior, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+@end
+
+
 #pragma mark - NNDecimalNumber
 
 typedef NS_ENUM(NSUInteger, NNDecimalNumberOperatorType) {
@@ -38,27 +52,43 @@ typedef NS_ENUM(NSUInteger, NNDecimalNumberOperatorType) {
     NNDecimalNumberOperatorTypeMulPowerOf10,
 };
 
-static Class __nn_decimalNumberBehaviors;
+static Class __nn_decimalNumberGlobalBehavior;
 
 @implementation NSString (NNDecimalNumber)
 
-#pragma mark - NNDecimalNumberBehaviors
-+ (void)nn_setDecimalNumberBehaviors:(Class)decimalNumberBehaviors {
-    NSAssert([decimalNumberBehaviors conformsToProtocol:@protocol(NSDecimalNumberBehaviors)], @"DecimalNumberBehaviors must be conforms to protocol NSDecimalNumberBehaviors");
-    __nn_decimalNumberBehaviors = decimalNumberBehaviors;
+#pragma mark - NNDecimalNumberGlobalBehavior
++ (Class)nn_decimalNumberGlobalBehavior {
+    if (__nn_decimalNumberGlobalBehavior == nil) {
+        __nn_decimalNumberGlobalBehavior = [NNDecimalNumberDefaultBehavior class];
+    }
+    return __nn_decimalNumberGlobalBehavior;
 }
 
-+ (Class)nn_decimalNumberBehaviors {
-    if (__nn_decimalNumberBehaviors == nil) {
-        __nn_decimalNumberBehaviors = [NNDecimalNumberHandler class];
-    }
-    return __nn_decimalNumberBehaviors;
++ (void)nn_setDecimalNumberGlobalBehavior:(Class)decimalNumberGlobalBehavior {
+    NSAssert([decimalNumberGlobalBehavior conformsToProtocol:@protocol(NSDecimalNumberBehaviors)], @"DecimalNumberGlobalBehavior must be conforms to protocol NSDecimalNumberBehaviors");
+    __nn_decimalNumberGlobalBehavior = decimalNumberGlobalBehavior;
 }
 
 #pragma mark - NNDecimalNumberFormula
 - (NSString *)nn_formula {
     NSString *formula = __nn_formulaFromFormulaStack(self.nn_formulaStack);
     return formula;
+}
+
+#pragma mark - NNDecimalNumberBehavior
+- (NSString *(^)(id <NSDecimalNumberBehaviors>))nn_behavior {
+    return ^NSString *(id <NSDecimalNumberBehaviors> behavior) {
+        if (![[self class] isKindOfClass:[NSMutableString class]]) {
+            NSMutableString *value = [NSMutableString stringWithString:self];
+            value.nn_decimalNumberBehavior = behavior;
+            value.nn_formulaStack = self.nn_formulaStack;
+            return value;
+        }
+        else {
+            self.nn_decimalNumberBehavior = behavior;
+            return self;
+        }
+    };
 }
 
 #pragma mark - NNDecimalNumber
@@ -118,45 +148,56 @@ static Class __nn_decimalNumberBehaviors;
         formulaStack;
     });
     
+    id <NSDecimalNumberBehaviors> behavior = ({
+        id <NSDecimalNumberBehaviors> behavior = [[[self class] nn_decimalNumberGlobalBehavior] new];
+        if (lString.nn_decimalNumberBehavior != nil) {
+            behavior = lString.nn_decimalNumberBehavior;
+        }
+        behavior;
+    });
+    
     switch (type) {
         case NNDecimalNumberOperatorTypeAdd:
             [formulaStack addObject:@"+"];
-            retDecimal = [lDecimal decimalNumberByAdding:rDecimal withBehavior:[[[self class] nn_decimalNumberBehaviors] new]];
+            retDecimal = [lDecimal decimalNumberByAdding:rDecimal withBehavior:behavior];
             break;
         case NNDecimalNumberOperatorTypeSub:
             [formulaStack addObject:@"-"];
-            retDecimal = [lDecimal decimalNumberBySubtracting:rDecimal withBehavior:[[[self class] nn_decimalNumberBehaviors] new]];
+            retDecimal = [lDecimal decimalNumberBySubtracting:rDecimal withBehavior:behavior];
             break;
         case NNDecimalNumberOperatorTypeMul:
             if (lString.nn_formulaStack != nil) {
                 formulaStack = [NSMutableArray arrayWithObject:formulaStack];
             }
             [formulaStack addObject:@"×"];
-            retDecimal = [lDecimal decimalNumberByMultiplyingBy:rDecimal withBehavior:[[[self class] nn_decimalNumberBehaviors] new]];
+            retDecimal = [lDecimal decimalNumberByMultiplyingBy:rDecimal withBehavior:behavior];
             break;
         case NNDecimalNumberOperatorTypeDiv:
             if (lString.nn_formulaStack != nil) {
                 formulaStack = [NSMutableArray arrayWithObject:formulaStack];
             }
             [formulaStack addObject:@"÷"];
-            retDecimal = [lDecimal decimalNumberByDividingBy:rDecimal withBehavior:[[[self class] nn_decimalNumberBehaviors] new]];
+            retDecimal = [lDecimal decimalNumberByDividingBy:rDecimal withBehavior:behavior];
             break;
         case NNDecimalNumberOperatorTypePower:
             if (lString.nn_formulaStack != nil) {
                 formulaStack = [NSMutableArray arrayWithObject:formulaStack];
             }
             [formulaStack addObject:@"^"];
-            retDecimal = [lDecimal decimalNumberByRaisingToPower:[rDecimal unsignedIntegerValue] withBehavior:[[[self class] nn_decimalNumberBehaviors] new]];
+            retDecimal = [lDecimal decimalNumberByRaisingToPower:[rDecimal unsignedIntegerValue] withBehavior:behavior];
             break;
         case NNDecimalNumberOperatorTypeMulPowerOf10:
             if (lString.nn_formulaStack != nil) {
                 formulaStack = [NSMutableArray arrayWithObject:formulaStack];
             }
             [formulaStack addObject:@"× 10 ^"];
-            retDecimal = [lDecimal decimalNumberByMultiplyingByPowerOf10:[rDecimal shortValue] withBehavior:[[[self class] nn_decimalNumberBehaviors] new]];
+            retDecimal = [lDecimal decimalNumberByMultiplyingByPowerOf10:[rDecimal shortValue] withBehavior:behavior];
             break;
     }
+    
     NSString *retString = [retDecimal stringValue];
+    
+    retString.nn_decimalNumberBehavior = behavior;
     
     if (rString.nn_formulaStack) {
         [formulaStack addObject:rString.nn_formulaStack];

@@ -16,26 +16,28 @@ FOUNDATION_EXPORT const unsigned char NNDecimalNumberVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <NNDecimalNumber/PublicHeader.h>
 
-@protocol NNDecimalNumberBehaviors <NSObject>
+@protocol NNDecimalNumberGlobalBehavior <NSObject>
 
 /**
  设置 DecimalNumber 计算中 Rounding 和 Exception 的处理类
  
- @discussion 不设置，默认使用 NNDecimalNumberHandler 类
- @param decimalNumberBehaviors 参数类必须遵守 NSDecimalNumberBehaviors 协议
+ @discussion 不设置，默认使用 NNDecimalNumberDefaultBehavior 类
+ @param decimalNumberGlobalBehavior 参数类必须遵守 NSDecimalNumberBehaviors 协议
  */
-+ (void)nn_setDecimalNumberBehaviors:(Class)decimalNumberBehaviors;
++ (void)nn_setDecimalNumberGlobalBehavior:(Class)decimalNumberGlobalBehavior;
 
 /**
  获取 DecimalNumber 计算中 Rounding 和 Exception 的处理类
 
  @return decimalNumberBehaviors 类
  */
-+ (Class)nn_decimalNumberBehaviors;
++ (Class)nn_decimalNumberGlobalBehavior;
 
 @end
 
 @protocol NNDecimalNumber <NSObject>
+
+@property (nonatomic, copy, readonly) NSString *(^nn_behavior)(id <NSDecimalNumberBehaviors>);
 
 @property (nonatomic, copy, readonly) NSString *(^nn_add)(id value);
 @property (nonatomic, copy, readonly) NSString *(^nn_sub)(id value);
@@ -63,7 +65,7 @@ FOUNDATION_EXPORT const unsigned char NNDecimalNumberVersionString[];
 
 @end
 
-@interface NSString (NNDecimalNumber) <NNDecimalNumber, NNDecimalNumberCompare, NNDecimalNumberFormula, NNDecimalNumberBehaviors>
+@interface NSString (NNDecimalNumber) <NNDecimalNumber, NNDecimalNumberCompare, NNDecimalNumberFormula, NNDecimalNumberGlobalBehavior>
 
 @end
 

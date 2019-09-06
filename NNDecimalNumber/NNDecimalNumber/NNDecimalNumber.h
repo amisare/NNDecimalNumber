@@ -66,15 +66,29 @@ FOUNDATION_EXPORT const unsigned char NNDecimalNumberVersionString[];
 @end
 
 @interface NSString (NNDecimalNumber) <NNDecimalNumber, NNDecimalNumberCompare, NNDecimalNumberFormula, NNDecimalNumberGlobalBehavior>
-
 @end
 
 @interface NSNumber (NNDecimalNumber) <NNDecimalNumber, NNDecimalNumberCompare>
-
 @end
 
 @interface NSDecimalNumber (NNDecimalNumber) <NNDecimalNumberCompare>
-
 @end
 
 
+NS_INLINE NSString *NN_Trust(id value) {
+    if (value == nil) {
+        return [NSMutableString stringWithString:[[NSDecimalNumber notANumber] stringValue]];
+    }
+    if ([value isKindOfClass:[NSString class]]) {
+        if ([value isKindOfClass:[NSMutableString class]]) {
+            return value;
+        }
+        else {
+            return [NSMutableString stringWithString:value];
+        }
+    }
+    if ([value isKindOfClass:[NSNumber class]]) {
+        return [NSMutableString stringWithString:[value stringValue]];
+    }
+    return [NSMutableString stringWithString:[value description]];
+}

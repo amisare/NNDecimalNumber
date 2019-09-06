@@ -305,20 +305,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/NNDecimalNumber/NNDecimalNumber.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NNDecimalNumber.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		840705ED560500A9CA1A2D2B /* [CP] Check Pods Manifest.lock */ = {
@@ -523,7 +518,7 @@
 		};
 		6747610522705FB600222D00 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED761B21F30BCFA21E749C81 /* Pods-NNDecimalNumberDemo.debug.xcconfig */;
+			baseConfigurationReference = D3EFE5306DE3D4009029010D /* Pods-NNDecimalNumberDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,7 +535,7 @@
 		};
 		6747610622705FB600222D00 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0FB72B9E0BAAAA8ACB42DD9 /* Pods-NNDecimalNumberDemo.release.xcconfig */;
+			baseConfigurationReference = B62A7771489A7CF9650E36F6 /* Pods-NNDecimalNumberDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

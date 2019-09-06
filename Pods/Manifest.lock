@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: NNDecimalNumber.podspec
 
 SPEC CHECKSUMS:
-  NNDecimalNumber: 7acd9af52d1d77662331c6dc0cfc1e6a01108755
+  NNDecimalNumber: a369195bbce948f3cdeb5344a16fa1e8637560c8
 
 PODFILE CHECKSUM: 534db7ac72d1362b30ea93b4c152ebe9d6b3aba6
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5

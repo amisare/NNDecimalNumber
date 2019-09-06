@@ -128,10 +128,10 @@ static Class __nn_decimalNumberGlobalBehavior;
     };
 }
 
-- (NSString *)__nn_operatorWithType:(NNDecimalNumberOperatorType)type left:(NSString *)l right:(NSString *)r {
+- (NSString *)__nn_operatorWithType:(NNDecimalNumberOperatorType)type left:(id)l right:(id)r {
     
-    NSString *lString = __nn_stringWithValue(l);
-    NSString *rString = __nn_stringWithValue(r);
+    NSString *lString = NN_Trust(l);
+    NSString *rString = NN_Trust(r);
     
     NSDecimalNumber *lDecimal = [NSDecimalNumber decimalNumberWithString:lString];
     NSDecimalNumber *rDecimal = [NSDecimalNumber decimalNumberWithString:rString];
@@ -195,7 +195,7 @@ static Class __nn_decimalNumberGlobalBehavior;
             break;
     }
     
-    NSString *retString = [retDecimal stringValue];
+    NSString *retString = [NSMutableString stringWithString:[retDecimal stringValue]];
     
     retString.nn_decimalNumberBehavior = behavior;
     

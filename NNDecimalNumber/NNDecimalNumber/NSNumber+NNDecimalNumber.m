@@ -13,7 +13,7 @@
 @implementation NSNumber (NNDecimalNumberStringValue)
 
 - (NSString *)nn_stringValue {
-    return [NSMutableString stringWithString:self.stringValue];
+    return NN_Trust(self);
 }
 
 @end

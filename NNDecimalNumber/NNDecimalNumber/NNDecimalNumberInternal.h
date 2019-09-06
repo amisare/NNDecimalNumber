@@ -28,26 +28,6 @@
 @end
 
 /**
- value 转 字符串
- 
- @param value 数字字符串，或 NSNumber
- @return 字符串
- */
-NS_INLINE NSString *__nn_stringWithValue(id value) {
-    NSString *ret = nil;
-    if ([value isKindOfClass:[NSString class]]) {
-        ret = value;
-    }
-    else if ([value isKindOfClass:[NSNumber class]]) {
-        ret = [value nn_stringValue];
-    }
-    else {
-        ret = [NSMutableString stringWithString:[value description]];
-    }
-    return ret;
-}
-
-/**
  value 转 NSDecimalNumber
  
  @param value 数字字符串，或 NSNumber

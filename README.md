@@ -64,12 +64,96 @@
     }
 ```
 
+- 示例六：设置 NSDecimalNumberBehaviors
+
+```
+    // 设置全局 NSDecimalNumberBehaviors
+    {
+        [NSString nn_setDecimalNumberGlobalBehavior:[DecimalNumberGlobalBehavior class]];
+        NSString *c = @"1".nn_div(@(3));
+        NSLog(@"%@ = %@", c, c.nn_formula);
+    }
+    // 当前计算式 NSDecimalNumberBehaviors
+    {
+        DecimalNumberBehavior *behavior = [DecimalNumberBehavior new];
+        NSString *c = @"1".nn_behavior(behavior).nn_div(@(3)).nn_div(@(2));
+        NSLog(@"%@ = %@", c, c.nn_formula);
+    }
+    // 使用 NSDecimalNumberHandler
+    {
+        NSDecimalNumberHandler *behavior = [[NSDecimalNumberHandler alloc] initWithRoundingMode:NSRoundPlain
+                                                                                          scale:4
+                                                                               raiseOnExactness:false
+                                                                                raiseOnOverflow:false
+                                                                               raiseOnUnderflow:false
+                                                                            raiseOnDivideByZero:false];
+        NSString *c = @"1".nn_behavior(behavior).nn_div(@(3));
+        NSLog(@"%@ = %@", c, c.nn_formula);
+    }
+```
+
 - 示例六：异常计算（异常计算结果统一为字符串：@"NaN"，即`[[NSDecimalNumber notANumber] stringValue]`）
 
 ```
-    //( 2 × [UIView new] )
-    NSString *c = @"2".nn_mul([UIView new]);
-    NSLog(@"%@", c); //打印值：NaN
+    {
+        //( 2 × [UIView new] )
+        NSString *c = @"2".nn_mul([UIView new]);
+        NSLog(@"%@ = %@", c, c.nn_formula);
+    }
+    
+    {
+        //( 2 / 0 )
+        NSString *c = @"2".nn_div(@"0");
+        NSLog(@"%@ = %@", c, c.nn_formula);
+    }
+    
+    {
+        //( nil / nil )
+        NSString *c =  NN_Trust(nil).nn_div(nil);
+        NSLog(@"%@ = %@", c, c.nn_formula);
+    }
+    
+    {
+        //( nil / 0 )
+        NSString *c =  NN_Trust(nil).nn_div(@(0));
+        NSLog(@"%@ = %@", c, c.nn_formula);
+    }
+    
+    {
+        //( nil / [UIView new] )
+        NSString *c =  NN_Trust(nil).nn_div([UIView new]);
+        NSLog(@"%@ = %@", c, c.nn_formula);
+    }
+    
+    {
+        //( nil / [NSNull null] )
+        NSString *c =  NN_Trust(nil).nn_div([NSNull null]);
+        NSLog(@"%@ = %@", c, c.nn_formula);
+    }
+    
+    {
+        //( [NSNull null] / [NSNull null] )
+        NSString *c =  NN_Trust([NSNull null]).nn_div([NSNull null]);
+        NSLog(@"%@ = %@", c, c.nn_formula);
+    }
+    
+    {
+        //( [NSNull null] / 0 )
+        NSString *c =  NN_Trust([NSNull null]).nn_div(@(0));
+        NSLog(@"%@ = %@", c, c.nn_formula);
+    }
+    
+    {
+        //( [NSNull null] / [UIView new] )
+        NSString *c =  NN_Trust([NSNull null]).nn_div([UIView new]);
+        NSLog(@"%@ = %@", c, c.nn_formula);
+    }
+    
+    {
+        //( [NSNull null] / nil )
+        NSString *c =  NN_Trust([NSNull null]).nn_div(nil);
+        NSLog(@"%@ = %@", c, c.nn_formula);
+    }
 ```
 
 - 示例七：计算式输出

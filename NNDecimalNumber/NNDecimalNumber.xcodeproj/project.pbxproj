@@ -10,11 +10,13 @@
 		674760BF22705FA900222D00 /* NNDecimalNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674760B522705FA900222D00 /* NNDecimalNumber.framework */; };
 		674760C422705FA900222D00 /* NNDecimalNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760C322705FA900222D00 /* NNDecimalNumberTests.m */; };
 		674760C622705FA900222D00 /* NNDecimalNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 674760B822705FA900222D00 /* NNDecimalNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		674761132270610D00222D00 /* NSString+NNDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 674761112270610D00222D00 /* NSString+NNDecimalNumber.m */; };
-		674761172270611D00222D00 /* NSNumber+NNDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 674761152270611D00222D00 /* NSNumber+NNDecimalNumber.m */; };
 		6747612F227073BE00222D00 /* NNDecimalNumberDefaultBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 6747612D227073BE00222D00 /* NNDecimalNumberDefaultBehavior.h */; };
 		67476130227073BE00222D00 /* NNDecimalNumberDefaultBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 6747612E227073BE00222D00 /* NNDecimalNumberDefaultBehavior.m */; };
-		67EBD72A22718B7D0088E6AE /* NSDecimalNumber+NNDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EBD72822718B7D0088E6AE /* NSDecimalNumber+NNDecimalNumber.m */; };
+		7AD60308233C62AA00FFBC4D /* NSObject+NNDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD60306233C62AA00FFBC4D /* NSObject+NNDecimalNumber.m */; };
+		7AD60316233C920200FFBC4D /* NSObject+NNDecimalNumberFormulaStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD60314233C920200FFBC4D /* NSObject+NNDecimalNumberFormulaStack.m */; };
+		7AD6031A233C925500FFBC4D /* NSObject+NNDecimalNumberBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD60318233C925500FFBC4D /* NSObject+NNDecimalNumberBehavior.m */; };
+		7AD6031C233C930400FFBC4D /* NSObject+NNDecimalNumberFormulaStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AD6031B233C930400FFBC4D /* NSObject+NNDecimalNumberFormulaStack.h */; };
+		7AD6031E233C936600FFBC4D /* NSObject+NNDecimalNumberBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AD6031D233C936600FFBC4D /* NSObject+NNDecimalNumberBehavior.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +36,14 @@
 		674760BE22705FA900222D00 /* NNDecimalNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNDecimalNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		674760C322705FA900222D00 /* NNDecimalNumberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNDecimalNumberTests.m; sourceTree = "<group>"; };
 		674760C522705FA900222D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		674761112270610D00222D00 /* NSString+NNDecimalNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+NNDecimalNumber.m"; sourceTree = "<group>"; };
-		674761152270611D00222D00 /* NSNumber+NNDecimalNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+NNDecimalNumber.m"; sourceTree = "<group>"; };
 		6747612D227073BE00222D00 /* NNDecimalNumberDefaultBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNDecimalNumberDefaultBehavior.h; sourceTree = "<group>"; };
 		6747612E227073BE00222D00 /* NNDecimalNumberDefaultBehavior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNDecimalNumberDefaultBehavior.m; sourceTree = "<group>"; };
-		67EBD72822718B7D0088E6AE /* NSDecimalNumber+NNDecimalNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+NNDecimalNumber.m"; sourceTree = "<group>"; };
 		67EBD72B2271931E0088E6AE /* NNDecimalNumberInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNDecimalNumberInternal.h; sourceTree = "<group>"; };
+		7AD60306233C62AA00FFBC4D /* NSObject+NNDecimalNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NNDecimalNumber.m"; sourceTree = "<group>"; };
+		7AD60314233C920200FFBC4D /* NSObject+NNDecimalNumberFormulaStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NNDecimalNumberFormulaStack.m"; sourceTree = "<group>"; };
+		7AD60318233C925500FFBC4D /* NSObject+NNDecimalNumberBehavior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NNDecimalNumberBehavior.m"; sourceTree = "<group>"; };
+		7AD6031B233C930400FFBC4D /* NSObject+NNDecimalNumberFormulaStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NNDecimalNumberFormulaStack.h"; sourceTree = "<group>"; };
+		7AD6031D233C936600FFBC4D /* NSObject+NNDecimalNumberBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NNDecimalNumberBehavior.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +88,11 @@
 			children = (
 				674760B822705FA900222D00 /* NNDecimalNumber.h */,
 				67EBD72B2271931E0088E6AE /* NNDecimalNumberInternal.h */,
-				674761112270610D00222D00 /* NSString+NNDecimalNumber.m */,
-				674761152270611D00222D00 /* NSNumber+NNDecimalNumber.m */,
-				67EBD72822718B7D0088E6AE /* NSDecimalNumber+NNDecimalNumber.m */,
+				7AD60306233C62AA00FFBC4D /* NSObject+NNDecimalNumber.m */,
+				7AD6031B233C930400FFBC4D /* NSObject+NNDecimalNumberFormulaStack.h */,
+				7AD60314233C920200FFBC4D /* NSObject+NNDecimalNumberFormulaStack.m */,
+				7AD6031D233C936600FFBC4D /* NSObject+NNDecimalNumberBehavior.h */,
+				7AD60318233C925500FFBC4D /* NSObject+NNDecimalNumberBehavior.m */,
 				6747612D227073BE00222D00 /* NNDecimalNumberDefaultBehavior.h */,
 				6747612E227073BE00222D00 /* NNDecimalNumberDefaultBehavior.m */,
 				674760B922705FA900222D00 /* Info.plist */,
@@ -111,7 +117,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6747612F227073BE00222D00 /* NNDecimalNumberDefaultBehavior.h in Headers */,
+				7AD6031C233C930400FFBC4D /* NSObject+NNDecimalNumberFormulaStack.h in Headers */,
 				674760C622705FA900222D00 /* NNDecimalNumber.h in Headers */,
+				7AD6031E233C936600FFBC4D /* NSObject+NNDecimalNumberBehavior.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,10 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				674761172270611D00222D00 /* NSNumber+NNDecimalNumber.m in Sources */,
-				67EBD72A22718B7D0088E6AE /* NSDecimalNumber+NNDecimalNumber.m in Sources */,
-				674761132270610D00222D00 /* NSString+NNDecimalNumber.m in Sources */,
+				7AD6031A233C925500FFBC4D /* NSObject+NNDecimalNumberBehavior.m in Sources */,
+				7AD60308233C62AA00FFBC4D /* NSObject+NNDecimalNumber.m in Sources */,
 				67476130227073BE00222D00 /* NNDecimalNumberDefaultBehavior.m in Sources */,
+				7AD60316233C920200FFBC4D /* NSObject+NNDecimalNumberFormulaStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 
 ## 介绍
 
-提供 NNString， NSNumber 的 NSDecimalNumber 的计算及比较`分类` ，通过链式调用简化数值计算。
+提供 NSDecimalNumber 运算扩展 ，通过链式调用简化数值计算。
 
 ## 使用
 

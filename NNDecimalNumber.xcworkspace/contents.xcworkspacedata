@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:NNDecimalNumber/NNDecimalNumber.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:NNDecimalNumberDemo/NNDecimalNumberDemo.xcodeproj">
    </FileRef>
    <FileRef

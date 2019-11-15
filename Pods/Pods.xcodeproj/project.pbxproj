@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0A7969485F9B232635F7C4FD90BFA1F6 /* NNDecimalNumberDefaultBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 87987179306E581E6A1EF6ADFB881B00 /* NNDecimalNumberDefaultBehavior.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1B533ED1724E470D97928588063081A2 /* NSObject+NNDecimalNumberBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B43A429D2639222C485280FADB2E920 /* NSObject+NNDecimalNumberBehavior.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1CA2D7A9B31CB9B99B36C53554C0E9D4 /* Pods-NNDecimalNumberDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A558978B19C57EC87116C84556A71FCF /* Pods-NNDecimalNumberDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		240F4742CF4934BB9A4F3119DFCC7464 /* NNDecimalNumberDefaultBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = D984FEA16FDC6E8CA867F235EB6ECCBD /* NNDecimalNumberDefaultBehavior.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		431A671E6CC76C67D28F13A08C719AFD /* NSObject+NNDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 4261507C673392F41199EDC22990E1F0 /* NSObject+NNDecimalNumber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		570065523A6288D5E9F1C49BAD4F5A2B /* NNDecimalNumberInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F890BD4AF49C60AD98E3A50F3E86F34E /* NNDecimalNumberInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		756525899620F5841A45284EA37F2A55 /* NSObject+NNDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 4261507C673392F41199EDC22990E1F0 /* NSObject+NNDecimalNumber.m */; };
 		788189AB503C4B5F5CC6AADE762B0E2B /* NNDecimalNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D68082A8E43C524884ADEFEE47A78B5 /* NNDecimalNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		861253DA1E61C1C2B48749B265CF46E0 /* NSObject+NNDecimalNumberFormulaStack.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A18F6D73EA7CD637710EFCFFBCF25B /* NSObject+NNDecimalNumberFormulaStack.m */; };
 		944BCA98DCDECCA4E5862E77AF0C5840 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9A89BB84884A212E1AAD3F11D7593905 /* NNDecimalNumber-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76923670C4614FE2DA00AC6E182E0A1B /* NNDecimalNumber-dummy.m */; };
 		9DFDFE895E48436FA6B5DF210114A823 /* NNDecimalNumber-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D618FEF1815E29CA3F6AC21348A402E /* NNDecimalNumber-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2C4B6F733A2374594654A90FE701A8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A3E3999D82E881816B0E438434C50F33 /* NSObject+NNDecimalNumberFormulaStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 27EF9B0B9F845194EF014355E11669AD /* NSObject+NNDecimalNumberFormulaStack.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A755550446645863F8E3C2C3DBD03ADC /* NSObject+NNDecimalNumberBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 389A1A5031060FD9CEA3FAC40E337617 /* NSObject+NNDecimalNumberBehavior.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B44FEA63139E7DEED1B1DAF0A2663364 /* NNDecimalNumber-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76923670C4614FE2DA00AC6E182E0A1B /* NNDecimalNumber-dummy.m */; };
-		B72779DD46FC417CF1C7727A644BD796 /* NSObject+NNDecimalNumberFormulaStack.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A18F6D73EA7CD637710EFCFFBCF25B /* NSObject+NNDecimalNumberFormulaStack.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BCD659509F6983823680BF0ED24B4C12 /* NSObject+NNDecimalNumberBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B43A429D2639222C485280FADB2E920 /* NSObject+NNDecimalNumberBehavior.m */; };
 		F1EFC0A05C2C19521B7A6C23B07F75CE /* Pods-NNDecimalNumberDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03CEECA2BA88F8D0942DE768A5663C /* Pods-NNDecimalNumberDemo-dummy.m */; };
+		F47710ECBD3B13368630FBC4093669A4 /* NNDecimalNumberDefaultBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = D984FEA16FDC6E8CA867F235EB6ECCBD /* NNDecimalNumberDefaultBehavior.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,7 +232,7 @@
 			buildConfigurationList = A8AFB9A2D43A456144DD89E8D03A4176 /* Build configuration list for PBXNativeTarget "NNDecimalNumber" */;
 			buildPhases = (
 				89A98D77C1DCF69A9EEB119AD7E61BD2 /* Headers */,
-				DAE2D253F22A81741880E6942E5280D2 /* Sources */,
+				376A447F54C5F4C3624552BD3D1F0FDE /* Sources */,
 				084A4CB28EC5A6072EA3DEC4A5D4738A /* Frameworks */,
 				88DA742D383FFD3708E0416235AF1B3E /* Resources */,
 			);
@@ -309,23 +309,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		376A447F54C5F4C3624552BD3D1F0FDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A89BB84884A212E1AAD3F11D7593905 /* NNDecimalNumber-dummy.m in Sources */,
+				F47710ECBD3B13368630FBC4093669A4 /* NNDecimalNumberDefaultBehavior.m in Sources */,
+				756525899620F5841A45284EA37F2A55 /* NSObject+NNDecimalNumber.m in Sources */,
+				BCD659509F6983823680BF0ED24B4C12 /* NSObject+NNDecimalNumberBehavior.m in Sources */,
+				861253DA1E61C1C2B48749B265CF46E0 /* NSObject+NNDecimalNumberFormulaStack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		711F9B8D85135D5AB882EC3FDB7EB889 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F1EFC0A05C2C19521B7A6C23B07F75CE /* Pods-NNDecimalNumberDemo-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DAE2D253F22A81741880E6942E5280D2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B44FEA63139E7DEED1B1DAF0A2663364 /* NNDecimalNumber-dummy.m in Sources */,
-				240F4742CF4934BB9A4F3119DFCC7464 /* NNDecimalNumberDefaultBehavior.m in Sources */,
-				431A671E6CC76C67D28F13A08C719AFD /* NSObject+NNDecimalNumber.m in Sources */,
-				1B533ED1724E470D97928588063081A2 /* NSObject+NNDecimalNumberBehavior.m in Sources */,
-				B72779DD46FC417CF1C7727A644BD796 /* NSObject+NNDecimalNumberFormulaStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

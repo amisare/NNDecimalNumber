@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FE2ECB96C21948C028DC633 /* Pods_NNDecimalNumberDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB976A1BA0E65CBFBF80CE3 /* Pods_NNDecimalNumberDemo.framework */; };
 		674760DD22705FB500222D00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760DC22705FB500222D00 /* AppDelegate.m */; };
 		674760E022705FB500222D00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760DF22705FB500222D00 /* ViewController.m */; };
 		674760E322705FB500222D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674760E122705FB500222D00 /* Main.storyboard */; };
@@ -16,6 +15,8 @@
 		674760EB22705FB600222D00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760EA22705FB600222D00 /* main.m */; };
 		674760F522705FB600222D00 /* NNDecimalNumberDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760F422705FB600222D00 /* NNDecimalNumberDemoTests.m */; };
 		6747610022705FB600222D00 /* NNDecimalNumberDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 674760FF22705FB600222D00 /* NNDecimalNumberDemoUITests.m */; };
+		67AD22C924040D5700A186FF /* NNDecimalNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AD22C824040D5700A186FF /* NNDecimalNumber.framework */; };
+		67AD22CA24040D5700A186FF /* NNDecimalNumber.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67AD22C824040D5700A186FF /* NNDecimalNumber.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A6B5A2B2320D55400D0D882 /* DecimalNumberBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B5A2A2320D55400D0D882 /* DecimalNumberBehavior.m */; };
 		7A6B5A2E2320D88C00D0D882 /* DecimalNumberGlobalBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B5A2D2320D88C00D0D882 /* DecimalNumberGlobalBehavior.m */; };
 /* End PBXBuildFile section */
@@ -37,8 +38,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		67AD22CB24040D5700A186FF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				67AD22CA24040D5700A186FF /* NNDecimalNumber.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		3DB976A1BA0E65CBFBF80CE3 /* Pods_NNDecimalNumberDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNDecimalNumberDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		674760D822705FB500222D00 /* NNDecimalNumberDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNDecimalNumberDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		674760DB22705FB500222D00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		674760DC22705FB500222D00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,14 +69,11 @@
 		674760FB22705FB600222D00 /* NNDecimalNumberDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNDecimalNumberDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		674760FF22705FB600222D00 /* NNDecimalNumberDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNDecimalNumberDemoUITests.m; sourceTree = "<group>"; };
 		6747610122705FB600222D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67AD22C824040D5700A186FF /* NNDecimalNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NNDecimalNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6B5A292320D55400D0D882 /* DecimalNumberBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecimalNumberBehavior.h; sourceTree = "<group>"; };
 		7A6B5A2A2320D55400D0D882 /* DecimalNumberBehavior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecimalNumberBehavior.m; sourceTree = "<group>"; };
 		7A6B5A2C2320D88C00D0D882 /* DecimalNumberGlobalBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecimalNumberGlobalBehavior.h; sourceTree = "<group>"; };
 		7A6B5A2D2320D88C00D0D882 /* DecimalNumberGlobalBehavior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecimalNumberGlobalBehavior.m; sourceTree = "<group>"; };
-		B62A7771489A7CF9650E36F6 /* Pods-NNDecimalNumberDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNDecimalNumberDemo.release.xcconfig"; path = "Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo.release.xcconfig"; sourceTree = "<group>"; };
-		C0FB72B9E0BAAAA8ACB42DD9 /* Pods-NNDecimalNumberDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNDecimalNumberDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo.release.xcconfig"; sourceTree = "<group>"; };
-		D3EFE5306DE3D4009029010D /* Pods-NNDecimalNumberDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNDecimalNumberDemo.debug.xcconfig"; path = "Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		ED761B21F30BCFA21E749C81 /* Pods-NNDecimalNumberDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNDecimalNumberDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FE2ECB96C21948C028DC633 /* Pods_NNDecimalNumberDemo.framework in Frameworks */,
+				67AD22C924040D5700A186FF /* NNDecimalNumber.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,26 +102,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		163EF8C748B41137AB4F3D5C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D3EFE5306DE3D4009029010D /* Pods-NNDecimalNumberDemo.debug.xcconfig */,
-				B62A7771489A7CF9650E36F6 /* Pods-NNDecimalNumberDemo.release.xcconfig */,
-				ED761B21F30BCFA21E749C81 /* Pods-NNDecimalNumberDemo.debug.xcconfig */,
-				C0FB72B9E0BAAAA8ACB42DD9 /* Pods-NNDecimalNumberDemo.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
-		4920B427C5E440E6F749607B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3DB976A1BA0E65CBFBF80CE3 /* Pods_NNDecimalNumberDemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		674760CF22705FB500222D00 = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +109,7 @@
 				674760F322705FB600222D00 /* NNDecimalNumberDemoTests */,
 				674760FE22705FB600222D00 /* NNDecimalNumberDemoUITests */,
 				674760D922705FB500222D00 /* Products */,
-				163EF8C748B41137AB4F3D5C /* Pods */,
-				4920B427C5E440E6F749607B /* Frameworks */,
+				67AD22C724040D5700A186FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +161,14 @@
 			path = NNDecimalNumberDemoUITests;
 			sourceTree = "<group>";
 		};
+		67AD22C724040D5700A186FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67AD22C824040D5700A186FF /* NNDecimalNumber.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,11 +176,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6747610422705FB600222D00 /* Build configuration list for PBXNativeTarget "NNDecimalNumberDemo" */;
 			buildPhases = (
-				840705ED560500A9CA1A2D2B /* [CP] Check Pods Manifest.lock */,
 				674760D422705FB500222D00 /* Sources */,
 				674760D522705FB500222D00 /* Frameworks */,
 				674760D622705FB500222D00 /* Resources */,
-				45B299A2012F4E2EF6F3856B /* [CP] Embed Pods Frameworks */,
+				67AD22CB24040D5700A186FF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,48 +294,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		45B299A2012F4E2EF6F3856B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NNDecimalNumberDemo/Pods-NNDecimalNumberDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		840705ED560500A9CA1A2D2B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NNDecimalNumberDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		674760D422705FB500222D00 /* Sources */ = {
@@ -518,7 +473,6 @@
 		};
 		6747610522705FB600222D00 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3EFE5306DE3D4009029010D /* Pods-NNDecimalNumberDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,7 +489,6 @@
 		};
 		6747610622705FB600222D00 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B62A7771489A7CF9650E36F6 /* Pods-NNDecimalNumberDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

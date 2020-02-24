@@ -1,6 +1,0 @@
-framework module NNDecimalNumber {
-  umbrella header "NNDecimalNumber-umbrella.h"
-
-  export *
-  module * { export * }
-}

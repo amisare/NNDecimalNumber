@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "NNDecimalNumber"
-  s.version       = "2.0.0"
+  s.version       = "2.0.1"
   s.summary       = "Implement NSDecimalNumber calculations on NSString, NSNumber Category, simplifying NSDecimalNumber calculations."
 
   s.description   = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target   = '7.0'
   s.requires_arc  = true
 
-  s.source_files        = 'NNDecimalNumber/NNDecimalNumber/*.{h,m}'
-  s.public_header_files = 'NNDecimalNumber/NNDecimalNumber/NNDecimalNumber.h'
+  s.source_files        = 'NNDecimalNumber/*.{h,m}'
+  s.public_header_files = 'NNDecimalNumber/NNDecimalNumber.h'
 end
   

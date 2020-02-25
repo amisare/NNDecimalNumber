@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:NNDecimalNumber.xcodeproj">
+      location = "group:Example/NNDecimalNumberDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Example/NNDecimalNumberDemo.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
